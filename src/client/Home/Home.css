@@ -1,0 +1,43 @@
+/* Home.css */
+
+.home-page h1,
+.home-page h2
+{
+    font-family: "Roboto Slab"
+}
+
+.home-page h2 {
+    font-size: 35px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.home-page h3 {
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+
+.home-page .panels-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-page .home-half-panel {
+    flex-basis: 45%;
+    flex-grow: 1;
+    min-width: 250px;
+}
+
+
+.home-page .semesters-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-page .semester-table {
+    flex-basis: 45%;
+    flex-grow: 1;
+    min-width: 250px;
+}

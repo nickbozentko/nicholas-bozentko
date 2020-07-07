@@ -1,0 +1,26 @@
+/* MediaCard.css */
+
+.media-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.media-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.media-card .card-text-container {
+    padding: 2px 16px;
+}
+
+.media-card-img-div {
+    position: relative;
+    float: left;
+    box-shadow: inset 0px -7px 9px -7px black;
+}
+
+.media-card-img-div .media-card-img {
+    display: block;
+    position: relative;
+    z-index: -1;
+}

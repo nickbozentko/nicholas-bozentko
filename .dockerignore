@@ -1,0 +1,9 @@
+.vscode
+.git
+node_modules/
+dist/
+*.log
+tests
+README.md
+nodemon.json
+eslintrc.json
