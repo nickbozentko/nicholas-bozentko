@@ -21,18 +21,35 @@ const MediaCard = props => {
 
     return(
         <div 
-            className="media-card" 
-            style={{ 'margin': '15px', filter: isFocused ? 'blur(3px)' : '' }}
+            className="outer" 
+            style={{ margin: '15px' }}
             onMouseEnter={handleHover}
             onMouseLeave={handleUnhover}
         >
-            <div className="media-card-img-div">
-                <img className="media-card-img" src={imgSrc} alt="Image" style={{ width: '100%' }} />
+            <div 
+                className="media-card" 
+                style={{ filter: isFocused ? 'blur(4px)' : '' }}
+            >
+                <div className="media-card-img-div">
+                    <img 
+                        className="media-card-img" 
+                        src={imgSrc} 
+                        alt="Image" 
+                        style={{ width: '100%' }} 
+                    />
+                </div>
+            
+                <div 
+                    className="card-text-container"
+                    style={{ padding: '15px' }}
+                >
+                    <h5 style={{ fontFamily: 'Roboto Slab' }}>{title}</h5>
+                    <p style={{ fontSize: '16px' }}>{textContent}</p>
+                </div>
             </div>
-         
-            <div className="card-text-container">
-                <h3>{title}</h3>
-                <p>{textContent}</p>
+
+            <div className="middle">
+                <button>Source</button>
             </div>
         </div>
     );

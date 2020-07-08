@@ -29,15 +29,3 @@
     flex-grow: 1;
     min-width: 250px;
 }
-
-
-.home-page .semesters-list-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.home-page .semester-table {
-    flex-basis: 45%;
-    flex-grow: 1;
-    min-width: 250px;
-}

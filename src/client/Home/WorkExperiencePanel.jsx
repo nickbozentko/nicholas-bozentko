@@ -43,9 +43,9 @@ const WorkExperiencePanel = props => {
             <p>
                 My role at IBM involves modernizing the internal software portfolio of IBM Global Financing. 
                 To this end, I have developed and deployed scalable, cloud-ready applications that are utilized worldwide by members of the IBM Global Financing community.
-                Our team uses agile methodologies to continuously deliver improvements and quickly respond to feedback. 
+                My team uses agile methodologies to continuously deliver improvements and quickly respond to feedback. 
             </p>
-            <p>
+            <div>
                 Some of the technologies I have worked with include
                 <ul>
                     <li>Node.js / Express.js</li>
@@ -59,7 +59,7 @@ const WorkExperiencePanel = props => {
                     <li>IBM Cloud Services</li>
                     <li>Git / Github</li>
                 </ul>
-            </p>
+            </div>
         </Panel>
     );
 }

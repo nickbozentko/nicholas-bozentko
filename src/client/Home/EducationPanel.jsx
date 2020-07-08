@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 
 import ionaLogo from '../../../public/images/iona.png';
 import Panel from '../general/Panel.jsx';
-import SemestersList from './SemestersList.jsx';
+import ClassesModal from '../general/ClassesModal.jsx';
 
 const EducationPanel = props => {
+    const [showClasses, setShowClasses] = useState(false);
+
+    const handleClassesClose = () => setShowClasses(false);
+    const handleClassesOpen = () => setShowClasses(true);
+
     return(
         <Panel className="home-half-panel">
 
@@ -50,9 +56,27 @@ const EducationPanel = props => {
                         }}
                     />
                 </div>
-            </div>
 
-            <SemestersList />
+
+                <button
+                    onClick={handleClassesOpen}
+                    style={{ 
+                        borderRadius: '0px', 
+                        backgroundColor: '#8A2432',
+                        color: 'white',
+                        border: 'none',
+                        padding: '10px',
+                        width: '30%',
+                        minWidth: '200px'
+                    }}
+                >
+                    View Courses
+                </button>
+                <ClassesModal 
+                    show={showClasses}
+                    handleClose={handleClassesClose}
+                />
+            </div>
         </Panel>
     );
 }

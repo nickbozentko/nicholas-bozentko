@@ -4,7 +4,13 @@ const Panel = props => {
     return(
         <div 
             className="panel"
-            style={props.style}
+            style={{
+                ...props.style,
+                boxShadow: '0px 3px 7px #AAAAAA',
+                padding: '10px 20px 10px 20px',
+                margin: '25px 10px 25px 10px',
+                overflowWrap: 'normal'
+            }}
             className={`${props.className} panel`}
         >
             {props.children}
