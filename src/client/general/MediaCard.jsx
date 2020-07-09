@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 
 import './MediaCard.css';
 import './LinkIcon.jsx';
-import LinkIcon from './LinkIcon.jsx';
 
 const MediaCard = props => {
     let {
         imgSrc,
         title,
         textContent,
-        links
+        links,
+        skills
     } = props;
 
     let [isFocused, setIsFocused] = useState(false);
@@ -41,7 +41,15 @@ const MediaCard = props => {
                     style={{ padding: '15px' }}
                 >
                     <h5 style={{ fontFamily: 'Roboto Slab' }}>{title}</h5>
+
                     <p style={{ fontSize: '16px' }}>{textContent}</p>
+
+                    <hr />
+
+                    <h6 style={{ color: '#A8A8A8', textAlign: 'center' }}>Technologies Used:</h6>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                        {skills}
+                    </div>
                 </div>
             </div>
 

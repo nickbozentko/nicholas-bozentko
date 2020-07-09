@@ -3,6 +3,7 @@ import React from 'react';
 import Panel from '../general/Panel.jsx';
 import MediaCard from '../general/MediaCard.jsx';
 import LinkIcon from '../general/LinkIcon.jsx';
+import SkillItem from '../general/SkillItem.jsx';
 import gameOfCyclesImg from '../../../public/images/gameOfCycles.png';
 import flappyBallImg from '../../../public/images/flappyBall.png';
 import ticTacToeImg from '../../../public/images/ticTacToe.png';
@@ -11,7 +12,7 @@ const ProjectsPanel = props => {
     return(
         <Panel className="home-half-panel">
             <h2>Projects</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 250px)', justifyContent: 'center' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, 325px)', justifyContent: 'center' }}>
 
                 <MediaCard
                     imgSrc={gameOfCyclesImg}
@@ -23,6 +24,27 @@ const ProjectsPanel = props => {
                             link='https://github.com/nickbozentko/game-of-cycles'
                             key={0}
                         />
+                    ]}
+                    skills={[
+                        <SkillItem color="#A8A8A8">Python</SkillItem>,
+                        <SkillItem color="#A8A8A8">Cytoscape</SkillItem>
+                    ]}
+                />
+
+                <MediaCard
+                    imgSrc={flappyBallImg}
+                    title="Flappy Ball"
+                    textContent="A replica of a famous mobile game, playable in the browser. Try to beat my high score of 103."
+                    links={[
+                        <LinkIcon 
+                            iconName='fas fa-link'
+                            link='https://nickbozentko.github.io/flappy-ball/'
+                            key={0}
+                        />
+                    ]}
+                    skills={[
+                        <SkillItem color="#A8A8A8">Unity</SkillItem>,
+                        <SkillItem color="#A8A8A8">C#</SkillItem>
                     ]}
                 />
 
@@ -42,21 +64,13 @@ const ProjectsPanel = props => {
                             key={1}
                         />
                     ]}
-                />
-                
-                <MediaCard
-                    imgSrc={flappyBallImg}
-                    title="Flappy Ball"
-                    textContent="A replica of a famous mobile game, playable in the browser. Made with Unity."
-                    links={[
-                        <LinkIcon 
-                            iconName='fas fa-link'
-                            link='https://nickbozentko.github.io/flappy-ball/'
-                            key={0}
-                        />
+                    skills={[
+                        <SkillItem color="#A8A8A8">Node.js</SkillItem>,
+                        <SkillItem color="#A8A8A8">React</SkillItem>,
+                        <SkillItem color="#A8A8A8">Socket.io</SkillItem>
                     ]}
                 />
-
+                
             </div>
         </Panel>
     )

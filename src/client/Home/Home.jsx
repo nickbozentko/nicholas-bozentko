@@ -5,6 +5,7 @@ import './Home.css';
 import EducationPanel from './EducationPanel.jsx';
 import WorkExperiencePanel from './WorkExperiencePanel.jsx';
 import ProjectsPanel from './ProjectsPanel.jsx';
+import CredentialsPanel from './CredentialsPanel.jsx';
 
 import Panel from '../general/Panel.jsx';
 
@@ -39,9 +40,7 @@ const Home = props => {
                 <Col xl>
                     <WorkExperiencePanel />
 
-                    <Panel className="home-half-panel">
-                        <h2>Honors and Certifications</h2>
-                    </Panel>
+                    <CredentialsPanel />
                 </Col>
             </Row>
         </div>

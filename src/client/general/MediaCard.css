@@ -2,7 +2,7 @@
 
 .outer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .outer:hover {
@@ -35,7 +35,7 @@
 }
 
 .middle {
-  transition: .4s ease;
+  transition: .25s ease;
   opacity: 0;
   position: absolute;
   top: 50%;

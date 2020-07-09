@@ -19,7 +19,7 @@ const LinkIcon = props => {
                 filter: isFocused ? 'drop-shadow(0px 4px 2px black)' : 'drop-shadow(0px 8px 5px black)', 
                 cursor: 'pointer',
                 marginBottom: '50px',
-                transition: '0.2s'
+                transition: '0.12s'
             }}
             onClick={() => window.open(link, '_blank')}
             onMouseEnter={handleHover}

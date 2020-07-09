@@ -2,6 +2,7 @@ import React from 'react';
 
 import ibmLogo from '../../../public/images/ibm.png';
 import Panel from '../general/Panel.jsx';
+import SkillItem from '../general/SkillItem.jsx';
 
 const WorkExperiencePanel = props => {
     return(
@@ -45,20 +46,19 @@ const WorkExperiencePanel = props => {
                 To this end, I have developed and deployed scalable, cloud-ready applications that are utilized worldwide by members of the IBM Global Financing community.
                 My team uses agile methodologies to continuously deliver improvements and quickly respond to feedback. 
             </p>
+            <p>
+                Some of the technologies I have worked with include:
+            </p>
             <div>
-                Some of the technologies I have worked with include
-                <ul>
-                    <li>Node.js / Express.js</li>
-                    <li>React</li>
-                    <li>HTML5 / CSS3 / JavaScript</li>
-                    <li>SQL</li>
-                    <li>IBM Db2</li>
-                    <li>Docker</li>
-                    <li>RedHat Openshift</li>
-                    <li>Redis</li>
-                    <li>IBM Cloud Services</li>
-                    <li>Git / Github</li>
-                </ul>
+                <SkillItem color="#1F70C1">Node.js / Express.js</SkillItem>
+                <SkillItem color="#1F70C1">React</SkillItem>
+                <SkillItem color="#1F70C1">SQL</SkillItem>
+                <SkillItem color="#1F70C1">IBM Db2</SkillItem>
+                <SkillItem color="#1F70C1">Docker</SkillItem>
+                <SkillItem color="#1F70C1">RedHat Openshift</SkillItem>
+                <SkillItem color="#1F70C1">Redis</SkillItem>
+                <SkillItem color="#1F70C1">IBM Cloud Services</SkillItem>
+                <SkillItem color="#1F70C1">Git / GitHub</SkillItem>
             </div>
         </Panel>
     );
