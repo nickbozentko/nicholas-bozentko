@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
 
 import './MediaCard.css';
+import './LinkIcon.jsx';
+import LinkIcon from './LinkIcon.jsx';
 
 const MediaCard = props => {
     let {
         imgSrc,
         title,
-        textContent
+        textContent,
+        links
     } = props;
 
     let [isFocused, setIsFocused] = useState(false);
-
-    const handleHover = () => {
-        setIsFocused(true);
-    };
-
-    const handleUnhover = () => {
-        setIsFocused(false);
-    };
+    const handleHover = () => setIsFocused(true);
+    const handleUnhover = () => setIsFocused(false);
 
     return(
         <div 
@@ -48,8 +45,14 @@ const MediaCard = props => {
                 </div>
             </div>
 
-            <div className="middle">
-                <button>Source</button>
+            <div 
+                className="middle"
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column'
+                }}
+            >
+                {links}
             </div>
         </div>
     );
