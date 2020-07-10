@@ -7,11 +7,6 @@ import WorkExperiencePanel from './WorkExperiencePanel.jsx';
 import ProjectsPanel from './ProjectsPanel.jsx';
 import CredentialsPanel from './CredentialsPanel.jsx';
 
-import Panel from '../general/Panel.jsx';
-
-
-
-
 
 const Home = props => {
     return (
@@ -20,15 +15,37 @@ const Home = props => {
             style={{ 
                 fontFamily: 'Roboto',
                 marginLeft: '5%',
-                marginRight: '5%'
+                marginRight: '5%',
             }}
         >
-            <h1 
-                style={{ textAlign: 'center', fontSize: '40px' }}
-            >
-                Hi, I'm Nick. 
-                <span style={{ fontSize: '25px', color: 'gray' }}> Here's a little bit about me.</span>
-            </h1>
+            <Row>
+                <Col>
+                    <h1 
+                        style={{ 
+                            fontSize: '40px',
+                            marginLeft: '35px'
+                        }}
+                    >
+                        Hi, I'm Nick. 
+                    </h1>
+                    <span 
+                        style={{ 
+                            fontSize: '25px', 
+                            color: 'gray',
+                            marginLeft: '35px'
+                        }}
+                    > Here's a little bit about me.
+                    </span>
+                </Col>
+                <Col>
+                    <h5>Contact Me</h5>
+                    <div>
+                        <i className="fab fa-linkedin" style={{ color: 'black' }}></i>
+                        <i className="fas fa-envelope" style={{ color: 'black' }}></i>
+                    </div>
+                </Col>
+            </Row>
+
 
             <Row>
                 <Col xl>

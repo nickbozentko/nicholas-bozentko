@@ -34,7 +34,7 @@ const WorkExperiencePanel = props => {
                             verticalAlign: 'middle',
                             maxHeight: '275px',
                             maxWidth: '100%',
-                            height: '100%'
+                            margin: 'auto'
                         }}
                     />
                 </div>

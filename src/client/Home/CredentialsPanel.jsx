@@ -6,6 +6,7 @@ import dockerBadgeImg from '../../../public/images/dockerBadge.png';
 import blockchainBadgeImg from '../../../public/images/blockchainBadge.png';
 import agileBadgeImg from '../../../public/images/agileBadge.png';
 import kubeBadgeImg from '../../../public/images/kubeBadge.png';
+import upeImg from '../../../public/images/upe.png';
 
 const dockerBadgeLink = 'https://www.youracclaim.com/badges/b7a5f7d1-25dd-4a57-b703-93560d69a10b/';
 const blockchainBadgeLink = 'https://www.youracclaim.com/badges/742e5111-3d70-4153-9bc7-a16554388934/';
@@ -19,8 +20,37 @@ const CredentialsPanel = props => {
             <h2>Honors and Certifications</h2>
 
             <Panel>
-                <h2>Upsilon Pi Epsilon</h2>
+                <Row>
+                    <Col style={{ textAlign: 'center' }}>
+                            <h2>Upsilon Pi Epsilon</h2>
+                            <h3>International Honor Society for the Computing and Information Disciplines</h3>
+                    </Col>
+                    <Col>
+                        <img
+                            src={upeImg}
+                            style={{ 
+                                margin: 'auto',
+                                height: '100%',
+                                display: 'block',
+                                maxHeight: '250px',
+                                maxWidth: '100%',
+                                objectFit: 'scale-down',
+                                verticalAlign: 'middle',
+                            }}
+                        />
+                    </Col>
+                </Row>
             </Panel>
+
+
+
+
+            <Panel>ICPC</Panel>
+
+            <Panel>CS Club / Coding Comptition</Panel>
+
+
+
 
             <Row>
                 <Col 
@@ -30,8 +60,7 @@ const CredentialsPanel = props => {
                     <Panel style={{ flex: '1' }}>
                         <img
                             src={dockerBadgeImg}
-                            height='150px'
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
                             onClick={() => window.open(dockerBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>Docker Essentials: A Developer Intoduction</div>
@@ -44,8 +73,7 @@ const CredentialsPanel = props => {
                     <Panel style={{ flex: '1' }}>
                         <img
                             src={blockchainBadgeImg}
-                            height='150px'
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
                             onClick={() => window.open(blockchainBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Blockchain Essentials</div>
@@ -61,8 +89,7 @@ const CredentialsPanel = props => {
                     <Panel style={{ flex: '1' }}>
                         <img
                             src={kubeBadgeImg}
-                            height='150px'
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
                             onClick={() => window.open(kubeBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Cloud Kubernetes Service</div>
@@ -75,8 +102,7 @@ const CredentialsPanel = props => {
                     <Panel style={{ flex: '1' }}>
                         <img
                             src={agileBadgeImg}
-                            height='150px'
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
                             onClick={() => window.open(agileBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Agile Explorer</div>

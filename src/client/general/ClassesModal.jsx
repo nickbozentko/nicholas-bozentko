@@ -1,5 +1,5 @@
-import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Modal } from 'react-bootstrap';
 
 import SemestersList from './SemestersList';
 
@@ -8,6 +8,9 @@ const ClassesModal = props => {
         show,
         handleClose
     } = props;
+
+    const [closeBtnIsFocused, setCloseBtnIsFocused] = useState(false);
+
     return(
         <Modal 
             show={show} 
@@ -23,12 +26,15 @@ const ClassesModal = props => {
             <Modal.Footer>
                 <button
                     onClick={handleClose}
+                    onMouseEnter={() => setCloseBtnIsFocused(true)}
+                    onMouseLeave={() => setCloseBtnIsFocused(false)}
                     style={{ 
                         borderRadius: '0px', 
-                        backgroundColor: '#999999',
+                        backgroundColor: closeBtnIsFocused ? '#808080' : '#999999',
                         color: 'white',
                         border: 'none',
-                        padding: '10px'
+                        padding: '10px',
+                        transition: '0.12s'
                     }}
                 >
                     Close

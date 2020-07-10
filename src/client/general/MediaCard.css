@@ -13,6 +13,7 @@
   position: relative;
   float: left;
   box-shadow: inset 0px -7px 9px -7px black;
+  background-color: transparent;
 }
 
 .media-card-img-div .media-card-img {

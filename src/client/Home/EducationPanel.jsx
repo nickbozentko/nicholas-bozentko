@@ -7,6 +7,7 @@ import ClassesModal from '../general/ClassesModal.jsx';
 
 const EducationPanel = props => {
     const [showClasses, setShowClasses] = useState(false);
+    const [courseBtnIsFocused, setCourseBtnIsFocused] = useState(false);
 
     const handleClassesClose = () => setShowClasses(false);
     const handleClassesOpen = () => setShowClasses(true);
@@ -62,13 +63,16 @@ const EducationPanel = props => {
                     onClick={handleClassesOpen}
                     style={{ 
                         borderRadius: '0px', 
-                        backgroundColor: '#8A2432',
+                        backgroundColor: courseBtnIsFocused ? '#a32133' : '#8A2432',
                         color: 'white',
                         border: 'none',
                         padding: '10px',
                         width: '30%',
-                        minWidth: '200px'
+                        minWidth: '200px',
+                        transition: '0.12s'
                     }}
+                    onMouseEnter={() => setCourseBtnIsFocused(true)}
+                    onMouseLeave={() => setCourseBtnIsFocused(false)}
                 >
                     View Courses
                 </button>
