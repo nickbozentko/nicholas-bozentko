@@ -51,7 +51,7 @@ const EducationPanel = props => {
                         style={{ 
                             objectFit: 'scale-down',
                             verticalAlign: 'center',
-                            maxHeight: '100%',
+                            maxHeight: '375px',
                             maxWidth: '100%'
                         }}
                     />
