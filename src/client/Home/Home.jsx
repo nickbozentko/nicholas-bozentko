@@ -7,6 +7,8 @@ import WorkExperiencePanel from './WorkExperiencePanel.jsx';
 import ProjectsPanel from './ProjectsPanel.jsx';
 import CredentialsPanel from './CredentialsPanel.jsx';
 
+import nickLogo from '../../../public/images/nickLogo.svg';
+
 
 const Home = props => {
     return (
@@ -19,29 +21,37 @@ const Home = props => {
             }}
         >
             <Row>
-                <Col>
-                    <h1 
-                        style={{ 
-                            fontSize: '40px',
-                            marginLeft: '35px'
-                        }}
-                    >
-                        Hi, I'm Nick. 
-                    </h1>
-                    <span 
-                        style={{ 
-                            fontSize: '25px', 
-                            color: 'gray',
-                            marginLeft: '35px'
-                        }}
-                    > Here's a little bit about me.
+                <Col md>
+                    <img
+                        src={nickLogo}
+                        height="120px"
+                        width="120px"
+                        style={{  margin: '10px', position: 'relative', float: 'left' }}
+                    />
+                    <span>
+                        <h1 
+                            style={{ 
+                                fontSize: '40px',
+                            }}
+                        >
+                            Hi, I'm Nick. 
+                        </h1>
+                        <span 
+                            style={{ 
+                                fontSize: '25px', 
+                                color: 'gray',
+                            }}
+                        > Here's a little bit about me.
+                        </span>
                     </span>
                 </Col>
-                <Col>
-                    <h5>Contact Me</h5>
-                    <div>
-                        <i className="fab fa-linkedin" style={{ color: 'black' }}></i>
-                        <i className="fas fa-envelope" style={{ color: 'black' }}></i>
+                <Col md={3}>
+                    <div style={{ position: 'relative', float: 'right' }}>
+                        <h3>Contact Me</h3>
+                        <div>
+                            <i className="fab fa-linkedin" style={{ color: 'black' }}></i>
+                            <i className="fas fa-envelope" style={{ color: 'black' }}></i>
+                        </div>
                     </div>
                 </Col>
             </Row>
