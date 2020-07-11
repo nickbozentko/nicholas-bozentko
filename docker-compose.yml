@@ -8,6 +8,7 @@ services:
     restart: always
     environment:
       VIRTUAL_HOST: nicholasbozentko.com
+      LETSENCRYPT_HOST: nicholasbozentko.com
     container_name: nicholas-bozentko
 
 networks:
