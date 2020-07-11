@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  nicholas-bozentko:
+    image: nicholas-bozentko:latest
+    expose:
+      - 8080
+    restart: always
+    environment:
+      VIRTUAL_HOST: nicholasbozentko.com
+    container_name: nicholas-bozentko
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
