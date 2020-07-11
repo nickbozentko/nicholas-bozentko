@@ -22,7 +22,7 @@ const istioBadgeLink = 'https://www.youracclaim.com/badges/f6d51bf7-ceab-49f0-ac
 const CredentialsPanel = props => {
     return(
         <Panel className="home-half-panel">
-            <h2>Honors and Memberships</h2>
+            <h2>Honors</h2>
 
             <Panel>
                 <Row>
@@ -52,11 +52,9 @@ const CredentialsPanel = props => {
             </Panel>
 
 
+            {/* <Panel>ICPC</Panel>
 
-
-            <Panel>ICPC</Panel>
-
-            <Panel>CS Club / Coding Comptition</Panel>
+            <Panel>CS Club / Coding Comptition</Panel> */}
 
 
 

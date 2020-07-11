@@ -34,6 +34,10 @@ const EducationPanel = props => {
                         <span style={{ fontWeight: 'bold' }}>
                             GPA: 
                         </span> 4.0
+                        <br/>
+                        <span style={{ fontWeight: 'bold' }}>
+                            Dean's List: 
+                        </span> Six consecutive semesters 
                     </div>
 
                     <hr/>
