@@ -60,7 +60,7 @@ const ProjectsPanel = props => {
                         />,
                         <LinkIcon 
                             iconName='fas fa-link'
-                            link='http://ec2-3-15-120-253.us-east-2.compute.amazonaws.com//'
+                            link='http://ec2-3-15-120-253.us-east-2.compute.amazonaws.com/'
                             key={1}
                         />
                     ]}
