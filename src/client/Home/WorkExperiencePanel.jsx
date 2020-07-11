@@ -24,17 +24,15 @@ const WorkExperiencePanel = props => {
 
                     <hr />
                 </div>
-                <div>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <img 
                         src={ibmLogo} 
                         alt="IBM Logo" 
                         style={{ 
-                            display: 'inline-block',
                             objectFit: 'scale-down',
                             verticalAlign: 'middle',
                             maxHeight: '275px',
                             maxWidth: '100%',
-                            margin: 'auto'
                         }}
                     />
                 </div>

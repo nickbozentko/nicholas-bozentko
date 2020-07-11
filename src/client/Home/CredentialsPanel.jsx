@@ -27,8 +27,12 @@ const CredentialsPanel = props => {
             <Panel>
                 <Row>
                     <Col style={{ textAlign: 'center' }}>
-                            <h2>Upsilon Pi Epsilon</h2>
-                            <h3>International Honor Society for the Computing and Information Disciplines</h3>
+                        <div style={{ height: '100%', display: 'flex' }}>
+                            <div style={{ margin: 'auto 0' }}>
+                                <h2>Upsilon Pi Epsilon</h2>
+                                <h3>International Honor Society for the Computing and Information Disciplines</h3>
+                            </div>
+                        </div>
                     </Col>
                     <Col>
                         <img
