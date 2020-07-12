@@ -21,34 +21,50 @@ const Home = props => {
     let collapseWidth = 778;
 
     return (
-        <div 
-            className="home-page" 
-            style={{ 
-                fontFamily: 'Roboto',
-                marginLeft: '5%',
-                marginRight: '5%',
-            }}
-        >
+        <>
+            <div 
+                className="home-page" 
+                style={{ 
+                    fontFamily: 'Roboto',
+                    marginLeft: '5%',
+                    marginRight: '5%',
+                }}
+            >
 
-            <Header 
-                collapseWidth={collapseWidth}
-                windowWidth={windowWidth}
-            />
+                <Header 
+                    collapseWidth={collapseWidth}
+                    windowWidth={windowWidth}
+                />
 
-            <Row>
-                <Col xl>
-                    <EducationPanel />
+                <Row>
+                    <Col xl>
+                        <EducationPanel />
 
-                    <ProjectsPanel />
-                </Col>
-                
-                <Col xl>
-                    <WorkExperiencePanel />
+                        <ProjectsPanel windowWidth={windowWidth} />
+                    </Col>
+                    
+                    <Col xl>
+                        <WorkExperiencePanel />
 
-                    <CredentialsPanel />
-                </Col>
-            </Row>
-        </div>
+                        <CredentialsPanel />
+                    </Col>
+                </Row>
+
+
+            </div>
+
+            <hr />
+
+            <div 
+                style={{ 
+                    textAlign: 'center', 
+                    marginTop: '30px', 
+                    marginBottom: '60px' 
+                }}
+            >
+                Nicholas Bozentko | <a href="https://github.com/nickbozentko/nicholas-bozentko" target="_blank">Source Code</a>
+            </div>
+        </>
     );
 }
 

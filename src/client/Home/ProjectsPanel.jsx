@@ -9,10 +9,14 @@ import flappyBallImg from '../../../public/images/flappyBall.png';
 import ticTacToeImg from '../../../public/images/ticTacToe.png';
 
 const ProjectsPanel = props => {
+    let { windowWidth } = props;
+    let shrinkWidthMax = 1629;
+    let shrinkWidthMin = 1200;
+    let cardsShouldBeSmaller = shrinkWidthMax >= windowWidth && shrinkWidthMin <= windowWidth;
     return(
         <Panel className="home-half-panel">
             <h2>Projects</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, 325px)', justifyContent: 'center' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fill, ${cardsShouldBeSmaller ? '225px' : '325px'})`, justifyContent: 'center' }}>
 
                 <MediaCard
                     imgSrc={gameOfCyclesImg}
