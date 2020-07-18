@@ -83,7 +83,7 @@ const CredentialsPanel = props => {
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
                             onClick={() => window.open(dataPyBadgeLink, '_blank')}
                         />
-                        <div style={{ textAlign: 'center' }}>Data Analytics Using Python</div>
+                        <div style={{ textAlign: 'center' }}>Data Analysis Using Python</div>
                     </Panel>
                 </Col>
             </Row>
