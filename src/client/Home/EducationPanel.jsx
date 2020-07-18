@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 
-import ionaLogo from '../../../public/images/iona.png';
+import ionaLogo from '../../../public/images/ionaLogo.svg';
 import Panel from '../general/Panel.jsx';
 import ClassesModal from '../general/ClassesModal.jsx';
 
