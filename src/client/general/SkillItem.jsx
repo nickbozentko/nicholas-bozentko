@@ -14,7 +14,7 @@ const SkillItem = props => {
             style={{
                 border: `2px solid ${color}`,
                 color: isFocused ? 'white' : color,
-                backgroundColor: isFocused ? color : 'white',
+                backgroundColor: isFocused ? color : 'transparent',
                 display: 'inline-block',
                 borderRadius: '5px',
                 padding: '2px 5px 2px 5px',

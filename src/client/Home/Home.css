@@ -1,5 +1,9 @@
 /* Home.css */
 
+body {
+    background-color: #e9ecec;
+}
+
 .home-page h1,
 .home-page h2
 {
