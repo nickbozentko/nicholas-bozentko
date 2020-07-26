@@ -58,94 +58,87 @@ const CredentialsPanel = props => {
 
 
 
-            <h2>Skill Badges</h2>
+            <h2>Badges</h2>
             <Row>
                 <Col 
-                    sm 
+                    sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={dockerBadgeImg}
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
                             onClick={() => window.open(dockerBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>Docker Essentials: A Developer Intoduction</div>
                     </Panel>
                 </Col>
                 <Col 
-                    sm 
+                    sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={dataPyBadgeImg}
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
                             onClick={() => window.open(dataPyBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>Data Analysis Using Python</div>
                     </Panel>
                 </Col>
-            </Row>
-
-            <Row>
                 <Col 
-                    sm 
+                    sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={blockchainBadgeImg}
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
                             onClick={() => window.open(blockchainBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Blockchain Essentials</div>
                     </Panel>
                 </Col>
                 <Col 
-                    sm 
+                    sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={agileBadgeImg}
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
                             onClick={() => window.open(agileBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Agile Explorer</div>
                     </Panel>
                 </Col>
-            </Row>
-
-            <Row>
                 <Col
-                    sm 
+                    sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={kubeBadgeImg}
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
                             onClick={() => window.open(kubeBadgeLink, '_blank')}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Cloud Kubernetes Service</div>
                     </Panel>
                 </Col>
                 <Col
-                    sm
+                    sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={istioBadgeImg}
-                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
+                            style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
                             onClick={() => window.open(istioBadgeLink, '_blank')}
                         />
-                        <div style={{ textAlign: 'center' }}>Getting started with Microservices with Istio and IBM Cloud Kubernetes Service</div>
+                        <div style={{ textAlign: 'center' }}>Getting started with Microservices with Istio</div>
                     </Panel>
                 </Col>
             </Row>
-
         </Panel>
     )
 }
