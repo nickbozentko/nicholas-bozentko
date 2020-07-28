@@ -25,7 +25,7 @@ const EducationPanel = props => {
                     <div style={{ fontFamily: 'Roboto Mono' }}>
                         <span style={{ fontWeight: 'bold' }}>
                             Intended Degree: 
-                        </span> B.S. in Computer Science with Mathematics Minor
+                        </span> Bachelor of Science in Computer Science with Minor in Mathematics
                     </div>
                     
                     <hr />
