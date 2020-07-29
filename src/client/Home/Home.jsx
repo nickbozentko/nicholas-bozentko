@@ -53,13 +53,15 @@ const Home = props => {
 
             </div>
 
-            <hr />
-
             <div 
                 style={{ 
                     textAlign: 'center', 
-                    marginTop: '30px', 
-                    marginBottom: '60px' 
+                    paddingTop: '30px', 
+                    paddingBottom: '60px',
+                    backgroundColor: 'white',
+                    borderTop: '1px solid lightgray',
+                    paddingTop: '30px',
+                    boxShadow: 'inset 0px 10px 10px -8px gray'
                 }}
             >
                 Nicholas Bozentko | <a href="https://github.com/nickbozentko/nicholas-bozentko" target="_blank">Source Code</a>

@@ -24,7 +24,7 @@ const CredentialsPanel = props => {
         <Panel className="home-half-panel">
             <h2>Honors</h2>
 
-            <Panel>
+            <Panel style={{ borderRadius: '10px' }}>
                 <Row>
                     <Col style={{ textAlign: 'center' }}>
                         <div style={{ height: '100%', display: 'flex' }}>
@@ -64,7 +64,7 @@ const CredentialsPanel = props => {
                     sm 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px' }}>
                         <img
                             src={dockerBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
@@ -77,7 +77,7 @@ const CredentialsPanel = props => {
                     sm 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px' }}>
                         <img
                             src={dataPyBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
@@ -93,7 +93,7 @@ const CredentialsPanel = props => {
                     sm 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px' }}>
                         <img
                             src={blockchainBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
@@ -106,7 +106,7 @@ const CredentialsPanel = props => {
                     sm 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px' }}>
                         <img
                             src={agileBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
@@ -122,7 +122,7 @@ const CredentialsPanel = props => {
                     sm 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px' }}>
                         <img
                             src={kubeBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}
@@ -135,7 +135,7 @@ const CredentialsPanel = props => {
                     sm
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px' }}>
                         <img
                             src={istioBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', height: '150px' }}

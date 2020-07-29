@@ -1,7 +1,14 @@
 /* Home.css */
 
+/* 
+#eef0f1 - Original Darker Gray 
+#fffaf0 - Cream off white
+#f8f8ff - Purple-ish tint
+#f5f5f5 = "White smoke"
+*/ 
+
 body {
-    background-color: #e9ecec;
+    background-color: #eef0f1;
 }
 
 .home-page h1,
