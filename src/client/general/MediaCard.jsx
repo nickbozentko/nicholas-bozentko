@@ -19,7 +19,7 @@ const MediaCard = props => {
     return(
         <div 
             className="outer" 
-            style={{ margin: '15px' }}
+            style={{ margin: '15px', borderRadius: '10px' }}
             onMouseEnter={handleHover}
             onMouseLeave={handleUnhover}
         >
@@ -32,7 +32,7 @@ const MediaCard = props => {
                         className="media-card-img" 
                         src={imgSrc} 
                         alt="Image" 
-                        style={{ width: '100%' }} 
+                        style={{ width: '100%', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} 
                     />
                 </div>
             

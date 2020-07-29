@@ -9,7 +9,9 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
-.media-card-img-div {
+/* This is the shadow div over the image */ 
+
+/* .media-card-img-div {
   position: relative;
   float: left;
   box-shadow: inset 0px -7px 9px -7px black;
@@ -19,8 +21,8 @@
 .media-card-img-div .media-card-img {
   display: block;
   position: relative;
-  z-index: -1;
-}
+  /* z-index: -1; 
+} */
 
 .outer {
   position: relative;

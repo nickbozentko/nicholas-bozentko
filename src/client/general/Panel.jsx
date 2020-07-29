@@ -5,7 +5,8 @@ const Panel = props => {
         <div 
             className="panel"
             style={{
-                boxShadow: '0px 3px 7px #AAAAAA',
+                backgroundColor: 'white',
+                boxShadow: '0px 3px 7px #999999',
                 padding: '10px 20px 10px 20px',
                 margin: '25px 10px 25px 10px',
                 overflowWrap: 'normal',

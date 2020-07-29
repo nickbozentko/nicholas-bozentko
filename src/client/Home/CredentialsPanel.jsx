@@ -24,7 +24,7 @@ const CredentialsPanel = props => {
         <Panel className="home-half-panel">
             <h2>Honors</h2>
 
-            <Panel>
+            <Panel style={{ borderRadius: '10px' }}>
                 <Row>
                     <Col style={{ textAlign: 'center' }}>
                         <div style={{ height: '100%', display: 'flex' }}>
@@ -64,7 +64,7 @@ const CredentialsPanel = props => {
                     sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={dockerBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
@@ -77,7 +77,7 @@ const CredentialsPanel = props => {
                     sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={dataPyBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
@@ -90,7 +90,7 @@ const CredentialsPanel = props => {
                     sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={blockchainBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
@@ -103,7 +103,7 @@ const CredentialsPanel = props => {
                     sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={agileBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
@@ -116,7 +116,7 @@ const CredentialsPanel = props => {
                     sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={kubeBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
@@ -129,7 +129,7 @@ const CredentialsPanel = props => {
                     sm={6} xl={4} 
                     style={{ display: 'flex', flexDirection: 'column' }}
                 >
-                    <Panel style={{ flex: '1', marginBottom: '5px', marginLeft: '0px', marginRight: '0px' }}>
+                    <Panel style={{ flex: '1', marginBottom: '5px', borderRadius: '10px', marginLeft: '0px', marginRight: '0px' }}>
                         <img
                             src={istioBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}

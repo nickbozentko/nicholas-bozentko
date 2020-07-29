@@ -43,8 +43,11 @@ const WorkExperiencePanel = props => {
             </p>
             <p>
                 My role at IBM involves modernizing the internal software portfolio of IBM Global Financing. 
-                To this end, I have developed and deployed scalable, cloud-ready applications that are utilized worldwide by members of the IBM Global Financing community.
+                To this end, I have developed and deployed scalable web applications that are utilized worldwide by members of the IBM Global Financing community.
                 My team uses agile methodologies to continuously deliver improvements and quickly respond to feedback. 
+            </p>
+            <p>
+                The creation of these applications and systems has directly simplified processes related to outage tracking, SLA metrics, maintenance schedules, dependency information, and communication between IT and business units.
             </p>
             <p>
                 Some of the technologies I have worked with include:
