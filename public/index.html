@@ -43,6 +43,27 @@
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/cf22380de1.js" crossorigin="anonymous"></script>
+    
+    <!-- Firebase Core -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBOfET4gtgseFHV1R9PBbVvv5LWxBuHQig",
+            authDomain: "nicholas-bozentko-website.firebaseapp.com",
+            databaseURL: "https://nicholas-bozentko-website.firebaseio.com",
+            projectId: "nicholas-bozentko-website",
+            storageBucket: "nicholas-bozentko-website.appspot.com",
+            messagingSenderId: "649589843622",
+            appId: "1:649589843622:web:cfaecbc555b53f1a327667",
+            measurementId: "G-71HZ9FY43R"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
 
 </html>
