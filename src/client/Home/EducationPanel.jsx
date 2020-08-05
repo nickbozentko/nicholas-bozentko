@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import * as firebase from 'firebase/app';
 
 import ionaLogo from '../../../public/images/ionaLogo.svg';
 import Panel from '../general/Panel.jsx';
@@ -10,7 +10,10 @@ const EducationPanel = props => {
     const [courseBtnIsFocused, setCourseBtnIsFocused] = useState(false);
 
     const handleClassesClose = () => setShowClasses(false);
-    const handleClassesOpen = () => setShowClasses(true);
+    const handleClassesOpen = () => { 
+        setShowClasses(true);
+        firebase.analytics().logEvent('courses_opened');
+    };
 
     return(
         <Panel className="home-half-panel">

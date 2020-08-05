@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import * as firebase from 'firebase/app';
 
 import nickLogo from '../../../public/images/nickLogo.svg';
 
@@ -69,7 +70,10 @@ const Header = props => {
                                 }}
                                 onMouseEnter={() => setGithubFocused(true)}
                                 onMouseLeave={() => setGithubFocused(false)}
-                                onClick={() => window.open('https://github.com/nickbozentko', '_blank')}
+                                onClick={() => {
+                                    window.open('https://github.com/nickbozentko', '_blank');
+                                    firebase.analytics().logEvent('github_click');
+                                }}
                             />
                             <i 
                                 className="fab fa-linkedin" 
@@ -81,7 +85,10 @@ const Header = props => {
                                 }}
                                 onMouseEnter={() => setLinkedinFocused(true)}
                                 onMouseLeave={() => setLinkedinFocused(false)}
-                                onClick={() => window.open('https://www.linkedin.com/in/nicholas-bozentko/', '_blank')}
+                                onClick={() => {
+                                    window.open('https://www.linkedin.com/in/nicholas-bozentko/', '_blank');
+                                    firebase.analytics().logEvent('linkedin_click');
+                                }}
                             />
                         </div>
                     </div>

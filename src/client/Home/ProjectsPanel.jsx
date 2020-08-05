@@ -27,6 +27,7 @@ const ProjectsPanel = props => {
                             iconName='fab fa-github'
                             link='https://github.com/nickbozentko/game-of-cycles'
                             key={0}
+                            linkClickEventName="game_of_cycles_source_click"
                         />
                     ]}
                     skills={[
@@ -44,6 +45,7 @@ const ProjectsPanel = props => {
                             iconName='fas fa-link'
                             link='https://nickbozentko.github.io/flappy-ball/'
                             key={0}
+                            linkClickEventName="flappy_ball_demo_click"
                         />
                     ]}
                     skills={[
@@ -61,11 +63,13 @@ const ProjectsPanel = props => {
                             iconName='fab fa-github'
                             link='https://github.com/nickbozentko/tic-tac-toe'
                             key={0}
+                            linkClickEventName="tic_tac_toe_source_click"
                         />,
                         <LinkIcon 
                             iconName='fas fa-link'
                             link='http://ec2-3-15-120-253.us-east-2.compute.amazonaws.com/'
                             key={1}
+                            linkClickEventName="tic_tac_toe_demo_click"
                         />
                     ]}
                     skills={[

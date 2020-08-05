@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import * as firebase from 'firebase/app'
 
 import Panel from '../general/Panel.jsx';
 import dockerBadgeImg from '../../../public/images/dockerBadge.png';
@@ -68,7 +69,10 @@ const CredentialsPanel = props => {
                         <img
                             src={dockerBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
-                            onClick={() => window.open(dockerBadgeLink, '_blank')}
+                            onClick={() => {
+                                window.open(dockerBadgeLink, '_blank');
+                                firebase.analytics().logEvent('docker_badge_click')
+                            }}
                         />
                         <div style={{ textAlign: 'center' }}>Docker Essentials: A Developer Intoduction</div>
                     </Panel>
@@ -81,7 +85,10 @@ const CredentialsPanel = props => {
                         <img
                             src={dataPyBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
-                            onClick={() => window.open(dataPyBadgeLink, '_blank')}
+                            onClick={() => {
+                                window.open(dataPyBadgeLink, '_blank');
+                                firebase.analytics().logEvent('data_py_badge_click')
+                            }}
                         />
                         <div style={{ textAlign: 'center' }}>Data Analysis Using Python</div>
                     </Panel>
@@ -94,7 +101,10 @@ const CredentialsPanel = props => {
                         <img
                             src={blockchainBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
-                            onClick={() => window.open(blockchainBadgeLink, '_blank')}
+                            onClick={() => {
+                                window.open(blockchainBadgeLink, '_blank');
+                                firebase.analytics().logEvent('blockchain_badge_click')
+                            }}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Blockchain Essentials</div>
                     </Panel>
@@ -107,7 +117,10 @@ const CredentialsPanel = props => {
                         <img
                             src={agileBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
-                            onClick={() => window.open(agileBadgeLink, '_blank')}
+                            onClick={() => {
+                                window.open(agileBadgeLink, '_blank');
+                                firebase.analytics().logEvent('agile_badge_click')
+                            }}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Agile Explorer</div>
                     </Panel>
@@ -120,7 +133,10 @@ const CredentialsPanel = props => {
                         <img
                             src={kubeBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
-                            onClick={() => window.open(kubeBadgeLink, '_blank')}
+                            onClick={() => {
+                                window.open(kubeBadgeLink, '_blank');
+                                firebase.analytics().logEvent('kube_badge_click')
+                            }}
                         />
                         <div style={{ textAlign: 'center' }}>IBM Cloud Kubernetes Service</div>
                     </Panel>
@@ -133,7 +149,10 @@ const CredentialsPanel = props => {
                         <img
                             src={istioBadgeImg}
                             style={{ margin: 'auto', display: 'block', cursor: 'pointer', maxHeight: '150px', maxWidth: '100%' }}
-                            onClick={() => window.open(istioBadgeLink, '_blank')}
+                            onClick={() => {
+                                window.open(istioBadgeLink, '_blank');
+                                firebase.analytics().logEvent('istio_badge_click')
+                            }}
                         />
                         <div style={{ textAlign: 'center' }}>Getting started with Microservices with Istio</div>
                     </Panel>
