@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import * as firebase from 'firebase/app';
 
 const LinkIcon = props => {
     let {
         iconName,
-        link
+        link,
+        linkClickEventName
     } = props;
 
     let [isFocused, setIsFocused] = useState(false);
@@ -21,7 +23,12 @@ const LinkIcon = props => {
                 marginBottom: '50px',
                 transition: '0.12s'
             }}
-            onClick={() => window.open(link, '_blank')}
+            onClick={() => {
+                window.open(link, '_blank');
+                if (linkClickEventName) {
+                    firebase.analytics().logEvent(linkClickEventName)
+                }
+            }}
             onMouseEnter={handleHover}
             onMouseLeave={handleUnhover}
         />

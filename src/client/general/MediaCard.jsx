@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import './MediaCard.css';
-import './LinkIcon.jsx';
 
 const MediaCard = props => {
     let {
