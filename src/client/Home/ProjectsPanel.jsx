@@ -67,7 +67,7 @@ const ProjectsPanel = props => {
                         />,
                         <LinkIcon 
                             iconName='fas fa-link'
-                            link='http://ec2-3-15-120-253.us-east-2.compute.amazonaws.com/'
+                            link='https://tictactoe.nicholasbozentko.com'
                             key={1}
                             linkClickEventName="tic_tac_toe_demo_click"
                         />
