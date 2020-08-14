@@ -1,5 +1,5 @@
 # Start from node base
-FROM node:12
+FROM node:12-alpine
 
 # Set working directory
 WORKDIR /usr/src/app
