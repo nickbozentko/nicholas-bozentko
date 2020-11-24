@@ -210,27 +210,27 @@ const SemestersList = props => {
                             {
                                 tag: 'CS473',
                                 name: 'Mobile Application Development',
-                                grade: '-'
+                                grade: 'A'
                             },
                             {
                                 tag: 'CS481',
-                                name: 'Software Project Development: Design',
-                                grade: '-'
+                                name: 'Software Development: Design',
+                                grade: 'A'
                             },
                             {
                                 tag: 'PHY323',
                                 name: 'Modern Physics I',
-                                grade: '-'
+                                grade: 'A'
                             },
                             {
                                 tag: 'PHY300',
                                 name: 'Mathematical Mechanics I',
-                                grade: '-'
+                                grade: 'A'
                             },
                             {
                                 tag: 'PHL365',
                                 name: 'Philosophy of Science',
-                                grade: '-'
+                                grade: 'A'
                             }
                         ]}
                     />
@@ -239,7 +239,26 @@ const SemestersList = props => {
                     <SemesterTable
                         title="Spring 2021"
                         classes={[
-
+                            {
+                                tag: 'CS465',
+                                name: 'Data Mining',
+                                grade: '-'
+                            },
+                            {
+                                tag: 'CS482',
+                                name: 'Software Development: Implementation',
+                                grade: '-'
+                            },
+                            {
+                                tag: 'CS331',
+                                name: 'Theory of Programming Languages',
+                                grade: '-'
+                            },
+                            {
+                                tag: 'BUS130',
+                                name: 'The Legal Environment of Business',
+                                grade: '-'
+                            }
                         ]}
                     />
                 </Col>
