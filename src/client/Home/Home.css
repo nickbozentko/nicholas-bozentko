@@ -40,3 +40,14 @@ body {
     flex-grow: 1;
     min-width: 250px;
 }
+
+.sizeOnHover:hover {
+    transform: scale(1.06);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    transition: .15s cubic-bezier(.25,.61,.5,.99);
+    filter: drop-shadow(0 5px 1px #AAAAAA);
+}
+
+.sizeOnHover {
+    transition: .15s cubic-bezier(.25,.61,.5,.99);
+}

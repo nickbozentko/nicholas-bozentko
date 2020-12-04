@@ -40,7 +40,7 @@ const EducationPanel = props => {
                         <br/>
                         <span style={{ fontWeight: 'bold' }}>
                             Dean's List: 
-                        </span> Six consecutive semesters 
+                        </span> Seven consecutive semesters 
                     </div>
 
                     <hr/>

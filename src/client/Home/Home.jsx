@@ -30,7 +30,6 @@ const Home = props => {
                     marginRight: '5%',
                 }}
             >
-
                 <Header 
                     collapseWidth={collapseWidth}
                     windowWidth={windowWidth}

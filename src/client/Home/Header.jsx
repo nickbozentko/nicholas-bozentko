@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import * as firebase from 'firebase/app';
 
+import TypedIntro from './TypedIntro.jsx';
 import nickLogo from '../../../public/images/nickLogo.svg';
 
 
@@ -27,23 +28,11 @@ const Header = props => {
                             position: 'relative', 
                             float: 'left' 
                         }}
+                        className="sizeOnHover"
                     />
                     <span style={{ display: 'flex', height: '100%' }}>
                         <div style={{ margin: 'auto 0' }}>
-                            <h1 
-                                style={{ 
-                                    fontSize: '45px',
-                                }}
-                            >
-                                Hi, I'm Nick. 
-                            </h1>
-                            <span 
-                                style={{ 
-                                    fontSize: '20px', 
-                                    color: 'gray',
-                                }}
-                            > Here's a little bit about me.
-                            </span>
+                            <TypedIntro />
                         </div>
                     </span>
                 </div>
@@ -61,7 +50,7 @@ const Header = props => {
                         <h2>Contact Me</h2>
                         <div style={{ textAlign: 'center' }}>
                             <i 
-                                className="fab fa-github" 
+                                className="fab fa-github sizeOnHover" 
                                 style={{ 
                                     color: githubFocused ? '#000000' : '#333333',
                                     marginRight: '10px',
@@ -76,7 +65,7 @@ const Header = props => {
                                 }}
                             />
                             <i 
-                                className="fab fa-linkedin" 
+                                className="fab fa-linkedin sizeOnHover" 
                                 style={{ 
                                     color: linkedinFocused ?  '#065e8f' : '#0072b1',
                                     marginRight: '10px',
