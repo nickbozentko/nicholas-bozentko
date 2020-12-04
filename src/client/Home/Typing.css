@@ -1,0 +1,29 @@
+.blinkingCursorName {
+    border-right: .10em solid transparent;
+    animation-name: blink-caret-black;
+    animation-duration: 0.8s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 3;
+    animation-timing-function: cubic-bezier(0,.65,.35,.99);
+    font-family: "Roboto Slab"
+}
+
+.blinkingCursorIntro {
+    border-right: .10em solid transparent;
+    animation-name: blink-caret-gray;
+    animation-duration: 0.8s;
+    animation-delay: 2.2s;
+    animation-iteration-count: 6;
+    animation-timing-function: cubic-bezier(0,.65,.35,.99);
+}
+
+
+@keyframes blink-caret-gray {
+    from, to { border-color: transparent }
+    50% { border-color: gray }
+}
+
+@keyframes blink-caret-black {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
