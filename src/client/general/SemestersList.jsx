@@ -242,22 +242,22 @@ const SemestersList = props => {
                             {
                                 tag: 'CS465',
                                 name: 'Data Mining',
-                                grade: '-'
+                                grade: 'A'
                             },
                             {
                                 tag: 'CS482',
                                 name: 'Software Development: Implementation',
-                                grade: '-'
+                                grade: 'A'
                             },
                             {
                                 tag: 'CS331',
                                 name: 'Theory of Programming Languages',
-                                grade: '-'
+                                grade: 'A'
                             },
                             {
                                 tag: 'BUS130',
                                 name: 'The Legal Environment of Business',
-                                grade: '-'
+                                grade: 'A'
                             }
                         ]}
                     />

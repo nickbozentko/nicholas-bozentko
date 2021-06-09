@@ -8,38 +8,58 @@ const WorkExperiencePanel = props => {
     return(
         <Panel className="home-half-panel">
 
+            <h2>Work Experience</h2>
+
             <div style={{ display: 'grid', gridTemplateColumns: '7fr 4fr'}}>
-                <div>
-                    <h2>Work Experience</h2>
+                <span>
                     <h3>IBM</h3>
-
-                    <hr />
-
-                    <div style={{ fontFamily: 'Roboto Mono' }}>Software Developer Intern</div>
-
-                    <hr />
-
-                    <div style={{ fontFamily: 'Roboto Mono', fontWeight: '300' }}>May 2018 - Present</div>
                     <div style={{ fontFamily: 'Roboto Mono', fontWeight: '300' }}>Armonk, New York</div>
+                </span>
+                <img 
+                    src={ibmLogo} 
+                    alt="IBM Logo" 
+                    style={{ 
+                        objectFit: 'scale-down',
+                        verticalAlign: 'middle',
+                        maxHeight: '75px',
+                        maxWidth: '100%',
+                    }}
+                />
 
-                    <hr />
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img 
-                        src={ibmLogo} 
-                        alt="IBM Logo" 
-                        style={{ 
-                            objectFit: 'scale-down',
-                            verticalAlign: 'middle',
-                            maxHeight: '275px',
-                            maxWidth: '100%',
-                        }}
-                    />
-                </div>
             </div>
 
+            <hr />
+
+            <div 
+                style={{ fontFamily: 'Roboto Mono', display: 'flex', justifyContent: 'space-between' }}
+            >
+                <span style={{ display: 'inline-block', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    Software Developer
+                </span>
+                <span 
+                    style={{ fontWeight: '300', display: 'inline-block', whiteSpace: 'nowrap' }}
+                >
+                    June 2021 - Present
+                </span>
+            </div>
+
+            <div 
+                style={{ fontFamily: 'Roboto Mono', display: 'flex', justifyContent: 'space-between' }}
+            >
+                <span style={{ display: 'inline-block', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    Software Developer Intern
+                </span>
+                <span 
+                    style={{ fontWeight: '300', display: 'inline-block', whiteSpace: 'nowrap' }}
+                >
+                    May 2018 - May 2021
+                </span>
+            </div>
+
+            <hr />
+
             <p>
-                I have been with IBM since May of 2018, working full-time during the summers and part-time while classes are in session.
+                I have been with IBM since May of 2018, working full-time during the summers and part-time while classes were in session. After graduating in June of 2021, I joined IBM full-time as a Software Developer.
             </p>
             <p>
                 My role at IBM involves modernizing the internal software portfolio of IBM Global Financing. 

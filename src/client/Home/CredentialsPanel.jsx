@@ -23,42 +23,6 @@ const istioBadgeLink = 'https://www.youracclaim.com/badges/f6d51bf7-ceab-49f0-ac
 const CredentialsPanel = props => {
     return(
         <Panel className="home-half-panel">
-            <h2>Honors</h2>
-
-            <Panel style={{ borderRadius: '10px' }}>
-                <Row>
-                    <Col style={{ textAlign: 'center' }}>
-                        <div style={{ height: '100%', display: 'flex' }}>
-                            <div style={{ margin: 'auto 0' }}>
-                                <h2>Upsilon Pi Epsilon</h2>
-                                <h3>International Honor Society for the Computing and Information Disciplines</h3>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col>
-                        <img
-                            src={upeImg}
-                            style={{ 
-                                margin: 'auto',
-                                height: '100%',
-                                display: 'block',
-                                maxHeight: '250px',
-                                maxWidth: '100%',
-                                objectFit: 'scale-down',
-                                verticalAlign: 'middle',
-                            }}
-                        />
-                    </Col>
-                </Row>
-            </Panel>
-
-
-            {/* <Panel>ICPC</Panel>
-
-            <Panel>CS Club / Coding Comptition</Panel> */}
-
-
-
             <h2>Badges</h2>
             <Row>
                 <Col 

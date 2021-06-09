@@ -17,39 +17,46 @@ const EducationPanel = props => {
 
     return(
         <Panel className="home-half-panel">
-
-            <div style={{ display: 'grid', gridTemplateColumns: '7fr 4fr'}}>
-                <div>
-                    <h2>Education</h2>
+            <h2>Education</h2>
+                <div style={{ display: 'grid', gridTemplateColumns: '7fr 4fr'}}>
+                    <div>
                     <h3>Iona College</h3>
 
                     <hr />
 
-                    <div style={{ fontFamily: 'Roboto Mono' }}>
-                        <span style={{ fontWeight: 'bold' }}>
-                            Intended Degree: 
-                        </span> Bachelor of Science in Computer Science with Minor in Mathematics
+                    <div style={{ fontFamily: 'Roboto Mono', marginBottom: '10px' }}>
+                        <span style={{ fontWeight: 'bold' }}>Degree: </span>Bachelor of Science in Computer Science with Minor in Mathematics
                     </div>
                     
-                    <hr />
-                    
-                    <div style={{ fontFamily: 'Roboto Mono' }}>
-                        <span style={{ fontWeight: 'bold' }}>
-                            GPA: 
-                        </span> 4.0
-                        <br/>
-                        <span style={{ fontWeight: 'bold' }}>
-                            Dean's List: 
-                        </span> Seven consecutive semesters 
-                    </div>
-
-                    <hr/>
-
-                    <div style={{ fontFamily: 'Roboto Mono', fontWeight: '300' }}>August 2017 - May 2021 (Expected)</div>
+                    <div style={{ fontFamily: 'Roboto Mono', fontWeight: '300' }}>August 2017 - May 2021</div>
                     <div style={{ fontFamily: 'Roboto Mono', fontWeight: '300' }}>New Rochelle, New York</div>
 
                     <hr />
 
+                    <div style={{ fontFamily: 'Roboto Mono' }}>
+                        <span style={{ fontWeight: 'bold' }}>
+                            GPA: 
+                        </span> 4.0 - Summa Cum Laude
+                    </div>
+
+                    <button
+                        onClick={handleClassesOpen}
+                        style={{ 
+                            borderRadius: '0px', 
+                            backgroundColor: courseBtnIsFocused ? '#a32133' : '#8A2432',
+                            color: 'white',
+                            border: 'none',
+                            padding: '10px',
+                            marginTop: '10px',
+                            width: '30%',
+                            minWidth: '200px',
+                            transition: '0.12s'
+                        }}
+                        onMouseEnter={() => setCourseBtnIsFocused(true)}
+                        onMouseLeave={() => setCourseBtnIsFocused(false)}
+                    >
+                        View Courses
+                    </button>
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -59,30 +66,12 @@ const EducationPanel = props => {
                         style={{ 
                             objectFit: 'scale-down',
                             verticalAlign: 'center',
-                            maxHeight: '375px',
+                            maxHeight: '300px',
                             maxWidth: '100%'
                         }}
                     />
                 </div>
 
-
-                <button
-                    onClick={handleClassesOpen}
-                    style={{ 
-                        borderRadius: '0px', 
-                        backgroundColor: courseBtnIsFocused ? '#a32133' : '#8A2432',
-                        color: 'white',
-                        border: 'none',
-                        padding: '10px',
-                        width: '30%',
-                        minWidth: '200px',
-                        transition: '0.12s'
-                    }}
-                    onMouseEnter={() => setCourseBtnIsFocused(true)}
-                    onMouseLeave={() => setCourseBtnIsFocused(false)}
-                >
-                    View Courses
-                </button>
                 <ClassesModal 
                     show={showClasses}
                     handleClose={handleClassesClose}
