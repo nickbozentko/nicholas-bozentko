@@ -42,7 +42,7 @@ const TypedIntro = () => {
     useEffect(() => {
         setTimeout(() => {
             writeNameString()
-        }, 250)
+        }, 1250)
     }, []);
 
     return(
