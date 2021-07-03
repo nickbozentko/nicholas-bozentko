@@ -31,29 +31,29 @@ const WorkExperiencePanel = props => {
             <hr />
 
             <div 
-                style={{ fontFamily: 'Roboto Mono', display: 'flex', justifyContent: 'space-between' }}
+                style={{ fontFamily: 'Roboto Mono', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}
             >
-                <span style={{ display: 'inline-block', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                <div style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
                     Software Developer
-                </span>
-                <span 
+                </div>
+                <div 
                     style={{ fontWeight: '300', display: 'inline-block', whiteSpace: 'nowrap' }}
                 >
                     June 2021 - Present
-                </span>
+                </div>
             </div>
 
             <div 
-                style={{ fontFamily: 'Roboto Mono', display: 'flex', justifyContent: 'space-between' }}
+                style={{ fontFamily: 'Roboto Mono', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}
             >
-                <span style={{ display: 'inline-block', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                <div style={{ display: 'inline-block', whiteSpace: 'nowrap' }}>
                     Software Developer Intern
-                </span>
-                <span 
+                </div>
+                <div 
                     style={{ fontWeight: '300', display: 'inline-block', whiteSpace: 'nowrap' }}
                 >
                     May 2018 - May 2021
-                </span>
+                </div>
             </div>
 
             <hr />
