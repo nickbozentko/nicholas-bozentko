@@ -5,7 +5,7 @@
     /* animation-delay: 2s; */
     animation-iteration-count: 4.0;
     animation-timing-function: cubic-bezier(0,.65,.35,.99);
-    font-family: "Roboto Slab"
+    font-family: "Roboto Slab";
 }
 
 .blinkingCursorIntro {

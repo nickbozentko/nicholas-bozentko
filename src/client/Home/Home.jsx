@@ -37,13 +37,13 @@ const Home = props => {
 
                 <Row>
                     <Col xl>
-                        <EducationPanel />
+                        <WorkExperiencePanel />
 
                         <ProjectsPanel windowWidth={windowWidth} />
                     </Col>
                     
                     <Col xl>
-                        <WorkExperiencePanel />
+                        <EducationPanel />
 
                         <CredentialsPanel />
                     </Col>

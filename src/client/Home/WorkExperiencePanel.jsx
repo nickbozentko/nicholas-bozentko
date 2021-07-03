@@ -59,7 +59,7 @@ const WorkExperiencePanel = props => {
             <hr />
 
             <p>
-                I have been with IBM since May of 2018, working full-time during the summers and part-time while classes were in session. After graduating in June of 2021, I joined IBM full-time as a Software Developer.
+                I have been with IBM since May of 2018. I started as an intern and joined full time as a Software Developer after graduating in June of 2021. 
             </p>
             <p>
                 My role at IBM involves modernizing the internal software portfolio of IBM Global Financing. 
@@ -68,6 +68,7 @@ const WorkExperiencePanel = props => {
             </p>
             <p>
                 The creation of these applications and systems has directly simplified processes related to outage tracking, SLA metrics, maintenance schedules, dependency information, and communication between IT and business units.
+                
             </p>
             <p>
                 Some of the technologies I have worked with include:

@@ -18,8 +18,8 @@ const EducationPanel = props => {
     return(
         <Panel className="home-half-panel">
             <h2>Education</h2>
-                <div style={{ display: 'grid', gridTemplateColumns: '7fr 4fr'}}>
-                    <div>
+            <div style={{ display: 'grid', gridTemplateColumns: '7fr 4fr'}}>
+                <div>
                     <h3>Iona College</h3>
 
                     <hr />
@@ -36,27 +36,11 @@ const EducationPanel = props => {
                     <div style={{ fontFamily: 'Roboto Mono' }}>
                         <span style={{ fontWeight: 'bold' }}>
                             GPA: 
-                        </span> 4.0 - Summa Cum Laude
+                        </span> 4.0 / 4.0, Summa Cum Laude, Dean's List
                     </div>
 
-                    <button
-                        onClick={handleClassesOpen}
-                        style={{ 
-                            borderRadius: '0px', 
-                            backgroundColor: courseBtnIsFocused ? '#a32133' : '#8A2432',
-                            color: 'white',
-                            border: 'none',
-                            padding: '10px',
-                            marginTop: '10px',
-                            width: '30%',
-                            minWidth: '200px',
-                            transition: '0.12s'
-                        }}
-                        onMouseEnter={() => setCourseBtnIsFocused(true)}
-                        onMouseLeave={() => setCourseBtnIsFocused(false)}
-                    >
-                        View Courses
-                    </button>
+                    <hr />
+
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -66,17 +50,47 @@ const EducationPanel = props => {
                         style={{ 
                             objectFit: 'scale-down',
                             verticalAlign: 'center',
-                            maxHeight: '300px',
+                            maxHeight: '260px',
                             maxWidth: '100%'
                         }}
                     />
                 </div>
-
-                <ClassesModal 
-                    show={showClasses}
-                    handleClose={handleClassesClose}
-                />
             </div>
+
+            <div>
+                <span style={{ fontWeight: 'bold', fontFamily: 'Roboto Mono' }}>
+                    Honor Societies: 
+                </span>
+                <ul>
+                    <li>Upsilon Pi Epsilon - Honor Society for the Computing and Information Disciplines</li>
+                    <li>Pi Mu Epsilon - Honorary National Mathematics Society</li>
+                    <li>Delta Epsilon Sigma - National Scholastic Honor Society for Students of Catholic Colleges</li>
+                </ul>
+            </div>
+
+            <button
+                onClick={handleClassesOpen}
+                style={{ 
+                    borderRadius: '0px', 
+                    backgroundColor: courseBtnIsFocused ? '#a32133' : '#8A2432',
+                    color: 'white',
+                    border: 'none',
+                    padding: '10px',
+                    marginTop: '10px',
+                    width: '30%',
+                    minWidth: '200px',
+                    transition: '0.12s'
+                }}
+                onMouseEnter={() => setCourseBtnIsFocused(true)}
+                onMouseLeave={() => setCourseBtnIsFocused(false)}
+            >
+                View Courses
+            </button>
+        
+            <ClassesModal 
+                show={showClasses}
+                handleClose={handleClassesClose}
+            />
         </Panel>
     );
 }

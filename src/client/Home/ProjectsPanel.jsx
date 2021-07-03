@@ -7,12 +7,14 @@ import SkillItem from '../general/SkillItem.jsx';
 import gameOfCyclesImg from '../../../public/images/gameOfCycles.png';
 import flappyBallImg from '../../../public/images/flappyBall.png';
 import ticTacToeImg from '../../../public/images/ticTacToe.png';
+import stockGainImg from '../../../public/images/stockGainImg.png';
 
 const ProjectsPanel = props => {
     let { windowWidth } = props;
     let shrinkWidthMax = 1629;
     let shrinkWidthMin = 1200;
-    let cardsShouldBeSmaller = shrinkWidthMax >= windowWidth && shrinkWidthMin <= windowWidth;
+    let shrinkSizeForVerySmallScreens = 702;
+    let cardsShouldBeSmaller = (shrinkWidthMax >= windowWidth && shrinkWidthMin <= windowWidth) || windowWidth < shrinkSizeForVerySmallScreens;
     return(
         <Panel className="home-half-panel">
             <h2>Projects</h2>
@@ -76,6 +78,18 @@ const ProjectsPanel = props => {
                         <SkillItem color="#A8A8A8">Node.js</SkillItem>,
                         <SkillItem color="#A8A8A8">React</SkillItem>,
                         <SkillItem color="#A8A8A8">Socket.io</SkillItem>
+                    ]}
+                />
+
+                <MediaCard
+                    imgSrc={stockGainImg}
+                    title="Daily Top Stock Image Maker"
+                    textContent="Program generates an image every day at market close creating a visual report of the highest percentage gaining stock according to Yahoo Finance data"
+                    links={[]}
+                    skills={[
+                        <SkillItem color="#A8A8A8">Python</SkillItem>,
+                        <SkillItem color="#A8A8A8">Matplotlib</SkillItem>,
+                        <SkillItem color="#A8A8A8">AWS Lambda</SkillItem>
                     ]}
                 />
                 
