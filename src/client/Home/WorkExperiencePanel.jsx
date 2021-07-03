@@ -77,9 +77,10 @@ const WorkExperiencePanel = props => {
                 <SkillItem color="#1F70C1">React</SkillItem>
                 <SkillItem color="#1F70C1">SQL</SkillItem>
                 <SkillItem color="#1F70C1">IBM Db2</SkillItem>
-                <SkillItem color="#1F70C1">Docker</SkillItem>
-                <SkillItem color="#1F70C1">RedHat Openshift</SkillItem>
+                <SkillItem color="#1F70C1">MongoDB</SkillItem>
                 <SkillItem color="#1F70C1">Redis</SkillItem>
+                <SkillItem color="#1F70C1">Docker</SkillItem>
+                <SkillItem color="#1F70C1">Red Hat Openshift</SkillItem>
                 <SkillItem color="#1F70C1">IBM Cloud Services</SkillItem>
                 <SkillItem color="#1F70C1">Git / GitHub</SkillItem>
             </div>
