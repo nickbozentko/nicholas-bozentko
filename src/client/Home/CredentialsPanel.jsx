@@ -39,7 +39,7 @@ const CredentialsPanel = props => {
                             }}
                             className="sizeOnHover"
                         />
-                        <div style={{ textAlign: 'center' }}>Docker Essentials: A Developer Intoduction</div>
+                        <div style={{ textAlign: 'center' }}>Docker Essentials: A Developer Introduction</div>
                     </Panel>
                 </Col>
                 <Col 
