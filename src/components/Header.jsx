@@ -22,7 +22,7 @@ const Header = () => (
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Nicholas Bozentko" />
         <meta property="og:description" content="Hi, I'm Nick. Here's a little bit about me." />
-        <meta property="og:image" content="https://nicholasbozentko.com/nickLogo.svg" />
+        <meta property="og:image" content="https://nicholasbozentko.com/logo.svg" />
         <meta property="og:url" content="https://nicholasbozentko.com" />
         
         {/* Twitter Meta Tags */}
@@ -30,7 +30,7 @@ const Header = () => (
         <meta property="twitter:url" content="https://nicholasbozentko.com/" />
         <meta property="twitter:title" content="Nicholas Bozentko" />
         <meta property="twitter:description" content="Hi, I'm Nick. Here's a little bit about me." />
-        <meta property="twitter:image" content="https://nicholasbozentko.com/nickLogo.svg" />
+        <meta property="twitter:image" content="https://nicholasbozentko.com/logo.svg" />
     </Head>
 )
 
