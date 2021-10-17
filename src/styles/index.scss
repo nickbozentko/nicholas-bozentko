@@ -1,0 +1,66 @@
+@use 'fonts';
+@use 'colors';
+
+body {
+    @extend .font-family-primary;
+    background: colors.$background-color;
+    color: colors.$primary-text-color;
+    margin: 0px;
+
+    a {
+        color: colors.$primary-text-color;;
+        text-decoration: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    .body {
+        min-height: 100vh;
+    }
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(max(80%, 200px), 400px), 1fr));
+    grid-gap: 0 3%;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skill-item-root {
+    border: 2px solid;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 8px;
+    transition: 0.2s;
+    cursor: default;
+}
+
+@keyframes tracking-in-expand { 
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+
+$thin: 300;
+$regular: 400;
+
+.font-family-primary {
+    font-family: 'Noto Sans';
+}
+
+.font-family-secondary {
+    font-family: 'Roboto';
+}
+
+.font-family-mono {
+    font-family: 'Roboto Mono';
+}
+
+.font-weight-thin {
+    font-weight: $thin;
+}
+
+.font-weight-regular {
+    font-weight: $regular;
+}

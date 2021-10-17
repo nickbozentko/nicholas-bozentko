@@ -1,0 +1,181 @@
+@use "sass:math";
+@use 'fonts';
+@use 'colors';
+
+
+.hero-root {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+
+    $nav-height: 75px;
+    $hero-box-height-mid: 20vw;
+    $hero-box-max-height: 275px;
+    $hero-box-min-height: 100px;
+    $hero-box-width-mid: 60vw;
+    $hero-box-max-width: 800px;
+    $hero-box-min-width: 275px;
+    $hero-box-border-radius: 20px;
+    $hero-box-top-bottom-margin: 75px;
+    $hero-box-height: #{min(#{$hero-box-max-height}, max(#{$hero-box-height-mid}, #{$hero-box-min-height}))};
+    $hero-box-width: #{min(#{$hero-box-max-width}, max(#{$hero-box-width-mid}, #{$hero-box-min-width}))};
+
+    .hero-box {
+        box-sizing: border-box;
+        height: $hero-box-height;
+        width: $hero-box-width;
+        background: linear-gradient(160deg, colors.$gradient-1, colors.$gradient-2);
+        border-radius: $hero-box-border-radius;
+        position: relative;
+        margin: auto;
+        margin-top: $hero-box-top-bottom-margin;
+        margin-bottom: $hero-box-top-bottom-margin;
+    }
+
+    .particle {
+        position: absolute;
+        border-radius: 2px;
+        opacity: 0;
+        animation: 3s ease-out infinite;
+        animation-name: shoot, fade-out;
+
+        $particle-center: calc(#{$hero-box-height}/2 + #{$hero-box-top-bottom-margin} + #{$nav-height});
+        @for $i from 0 to 40 {
+            $time: (1.5 + .01*random(500))*1s; // 1.5 to 2 seconds
+            $size: calc(#{random(10)+5} * #{min(max(0.1vw, 0.5px), 2px)}); // Up to 50% difference in particle sizes. Also shrink/enlarge according to screen size
+
+            &:nth-child(#{$i + 1}) {
+                background: hsl(220, 100%, (random(50)+25)*1%);
+                animation-duration: $time;
+                width: $size;
+                height: $size;
+                top: calc(#{$particle-center} - #{$size/2});
+                left: calc(50% - #{$size/2});
+            }
+        }
+
+        $left-right-center-to-box-edge: #{$hero-box-width / 2};
+        $top-bottom-center-to-box-edge: #{$hero-box-height / 2};
+        $box-edge-particle-edge-delta: min(max(2vw, 15px), 40px);
+        $left-right-center-to-particle-edge: calc(#{$left-right-center-to-box-edge} + #{$box-edge-particle-edge-delta});
+        $top-bottom-center-to-particle-edge: calc(#{$top-bottom-center-to-box-edge} + #{$box-edge-particle-edge-delta});
+
+        // Right particles
+        @for $i from 0 to 10 {
+            $rand: math.div((random(21)-1), 10)-1; /* -1 to 1 */
+            &:nth-child(#{$i + 1}) {
+                transform: translate(
+                    $left-right-center-to-particle-edge, /* All particles to right border */
+                    calc(#{$rand} * #{$top-bottom-center-to-particle-edge}) /* Random positions up and down within limit */
+                );
+            }
+        }
+        //Left particles
+        @for $i from 10 to 20 {
+            $rand: math.div((random(21)-1), 10)-1; /* -1 to 1 */
+            &:nth-child(#{$i + 1}) {
+                transform: translate(
+                    calc(#{$left-right-center-to-particle-edge} * #{-1}), /* All particles to left border */
+                    calc(#{$rand} * #{$top-bottom-center-to-particle-edge}) /* Random positions up and down within limit */
+                );
+            }
+        }
+        // Bottom particles
+        @for $i from 20 to 30 {
+            $rand: math.div((random(21)-1), 10)-1; /* -1 to 1 */
+            &:nth-child(#{$i + 1}) {
+                transform: translate(
+                    calc(#{$rand} * #{$left-right-center-to-particle-edge}), /* Random positions left and right within limit */
+                    $top-bottom-center-to-particle-edge /* All particles to bottom border */
+                );
+            }
+        }
+        // Top particles
+        @for $i from 30 to 40 {
+            $rand: math.div((random(21)-1), 10)-1; /* -1 to 1 */
+            &:nth-child(#{$i + 1}) {
+                transform: translate(
+                    calc(#{$rand} * #{$left-right-center-to-particle-edge}),  /* Random positions left and right within limit */
+                    calc(#{$top-bottom-center-to-particle-edge} * #{-1}) /* All particles to top border */
+                );
+            }
+        }
+    }
+
+    $logo-size-mid: 15vw;
+    $logo-size-min: 40px;
+    $logo-size-max: 200px;
+    $logo-size: #{min(#{$logo-size-max}, max(#{$logo-size-mid}, #{$logo-size-min}))};
+    .logo {
+        position: absolute;
+        display: inline-block;
+        left: calc(#{$logo-size} * -0.5);
+        top: calc((#{$hero-box-height} - #{$logo-size}) / 2);
+        width: $logo-size;
+        transition: transform .1s ease-out;
+    }
+
+    .logo:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 3px 3px black);
+    }
+
+    .intro-text-parent {
+        position: absolute;
+        left: min(max(10vw, 25px), 130px);
+        top: calc(#{$hero-box-height} / 8);
+    }
+
+    .intro-text-1 {
+        @extend .font-family-mono;
+        font-size: calc(2 * #{$hero-box-height} / 8);
+    }
+
+    .flex-wrapper {
+        display: flex;
+        height: calc(2.5 * #{$hero-box-height} / 8);
+    }
+
+    .intro-text-2 {
+        @extend .font-family-mono;
+        @extend .font-weight-thin;
+        font-size: calc(#{$hero-box-height} / 8);
+        display: inline-block; // right border "cursor" stays next to text as it's "writing"
+        align-self: flex-end;
+    }
+
+    .hide-cursor {
+        border-right: none;
+    }
+
+    .solid-cursor {
+        border-right: 0.1em solid white;
+    }
+
+    .blink-cursor {
+        border-right: 0.1em solid white;
+        animation-name: blink;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(1, end);
+    }
+}
+
+@keyframes fade-out { 
+    80% { 
+        opacity: 100%; 
+    } 
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes shoot {
+    0% { transform: translate(50%, 50%); }
+}
+
+@keyframes blink {
+    from, to { border-right: none; }
+    50% { border-right: 0.1em solid white; }
+}

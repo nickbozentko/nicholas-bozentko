@@ -1,0 +1,12 @@
+@use "colors";
+
+.footer-root {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background: colors.$footer-background-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset 0px 25px 25px -8px black;
+}

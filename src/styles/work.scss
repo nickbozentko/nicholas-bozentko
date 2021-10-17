@@ -1,0 +1,52 @@
+@use 'fonts';
+@use 'colors';
+
+.work-root {
+    .company {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    .ibm {
+        color: colors.$ibm-blue;
+    }
+
+    .role {
+        display: grid;
+        grid-template-columns: 1fr fit-content(70%);
+        margin-bottom: 1rem;
+        line-height: 1rem;
+
+        .role-name {
+            @extend .font-family-mono;
+            text-overflow: break-word;
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+
+        .time {
+            @extend .font-family-mono;
+            text-align: right;
+            color: colors.$secondary-text-color;
+        }
+
+        /* 
+         * When the screen gets too small, the "2 column" style gets way too cramped.
+         * Just show the time period under the role name.
+         */
+        @media (max-width: 450px) {
+            grid-template-columns: 1fr;
+
+            .time {
+                text-align: left;
+            }
+        }
+    }
+
+    .description{
+        @extend .font-family-secondary;
+        text-indent: 2rem;
+        line-height: 1.9rem;
+        color: colors.$primary-text-color;
+    }
+}

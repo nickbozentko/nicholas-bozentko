@@ -1,0 +1,43 @@
+@use 'fonts';
+@use 'colors';
+
+.nav-root {
+    background: linear-gradient(160deg, colors.$gradient-1, colors.$gradient-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    top: 0;
+    left: 0;
+    padding-left: min(50px, 2vw);
+    padding-right: min(50px, 2vw);
+
+    .nav-name {
+        font-weight: bold;
+        font-size: larger;
+        transition: .1s linear;
+    }
+
+    .nav-name:hover {
+        transform: scale(1.03) translateY(-2px);
+        filter: drop-shadow(0 3px 4px #000000);
+    }
+
+    .nav-links {
+
+        .nav-link {
+            margin: 0 min(1rem, 2vw) 0 min(1rem, 2vw);
+            display: inline-block;
+            transition: .1s linear;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.03) translateY(-2px);
+            filter: drop-shadow(0 3px 4px #000000);
+        }
+
+        .nav-link:active {
+            filter: drop-shadow(0 6px 4px #000000);
+        }
+    }
+}
