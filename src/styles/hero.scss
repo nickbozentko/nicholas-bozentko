@@ -129,9 +129,11 @@
     .intro-text-1 {
         @extend .font-family-mono;
         font-size: calc(2 * #{$hero-box-height} / 8);
-        
+
         // https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
-        -webkit-marquee-increment: 0vw;
+        // Also, webpack optimization is too "smart"
+        // It changes "0vw" to "0", causing this work-around to stop working!
+        -webkit-marquee-increment: 0.01vw;
     }
 
     .flex-wrapper {
@@ -147,7 +149,9 @@
         align-self: flex-end;
 
         // https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
-        -webkit-marquee-increment: 0vw;
+        // Also, webpack optimization is too "smart"
+        // It changes "0vw" to "0", causing this work-around to stop working!
+        -webkit-marquee-increment: 0.01vw;
     }
 
     .hide-cursor {
