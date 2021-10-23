@@ -129,6 +129,9 @@
     .intro-text-1 {
         @extend .font-family-mono;
         font-size: calc(2 * #{$hero-box-height} / 8);
+        
+        // https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
+        -webkit-marquee-increment: 0vw;
     }
 
     .flex-wrapper {
@@ -142,6 +145,9 @@
         font-size: calc(#{$hero-box-height} / 8);
         display: inline-block; // right border "cursor" stays next to text as it's "writing"
         align-self: flex-end;
+
+        // https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
+        -webkit-marquee-increment: 0vw;
     }
 
     .hide-cursor {
