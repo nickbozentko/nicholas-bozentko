@@ -49,9 +49,6 @@ const Education = () => (
                 <div className="society-description">National Scholastic Honor Society for Students of Catholic Colleges</div>
             </span>
         </div>
-
-        {/* @TODO Make the modal for this button */}
-        {/* <button className="classes-btn">Classes</button> */}
     </Section>
 );
 
