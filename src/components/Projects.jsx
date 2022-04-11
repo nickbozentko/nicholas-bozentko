@@ -57,6 +57,17 @@ const Projects = () => (
                 skills={["Python", "Matplotlib", "AWS Lambda"]}
                 skillsColor="#1ad630"
             />
+
+            <Project 
+                imgSrc="/redirect.png"
+                name="Personal Links Service"
+                description={<>
+                    <div>A URL "shortener" service running at <a href="https://links.nickboz.dev" target="_blank">https://links.nickboz.dev</a> that allows me to store and share custom links.</div>
+                    <div style={{ marginTop: '1.1em' }}>Example: Try out <a href="https://links.nickboz.dev/flappyball" target="_blank">https://links.nickboz.dev/flappyball</a> and see where you end up.</div>
+                </>}
+                skills={["AWS Lambda", "AWS API Gateway", "Python"]}
+                skillsColor="#fae13e"
+            />
         </div>
     </div>
 );
@@ -129,7 +140,7 @@ const Project = ({
 Project.propTypes = {
     imgSrc: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.oneOfType([PropTypes.string, PropTypes.elementType]).isRequired,
     skills: PropTypes.arrayOf(PropTypes.string),
     skillsColor: PropTypes.string,
     sourceCode: PropTypes.string,

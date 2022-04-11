@@ -28,7 +28,7 @@ body {
 .two-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(max(80%, 200px), 400px), 1fr));
-    grid-gap: 0 3%;
+    grid-gap: 0 1.5em;
     width: 90%;
     max-width: 1200px;
     margin: auto;

@@ -20,7 +20,7 @@ let skills = [
             'Swift', 
             'Java'
         ],
-        color: '#ff1f41',
+        color: '#ed0c26',
         icon: faCode
     },
     {
