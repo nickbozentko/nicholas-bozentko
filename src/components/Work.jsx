@@ -10,20 +10,27 @@ const Work = () => (
         iconColor="#0f62fe"
     >
         <h1 className="company ibm">IBM</h1>
+
+        <div className="description">
+            <div>
+            I am a Software Developer at IBM currently working on the CIO Hybrid Cloud Platforms team. 
+            I joined the company in 2018 as an intern after my freshman year of college.
+            </div>
+        </div>
+
         <div className="role">
-            <div className="role-name">Software Developer</div>
-            <div className="time">June 2021 - Present</div>
+            <div className="role-name">Staff Software Developer</div>
+            <div className="time">September 2022 - Present</div>
+        </div>
+        
+        <div className="role">
+            <div className="role-name">Associate Software Developer</div>
+            <div className="time">June 2021 - September 2022</div>
         </div>
 
         <div className="role">
             <div className="role-name">Software Developer Intern</div>
             <div className="time">May 2018 - June 2021</div>
-        </div>
-
-        <div className="description">
-            My primary role at IBM involves creating internal tools and systems that boost the productivity of IBMers through automation and process simplification.
-            In my role, I've led the successful development and deployment of multiple internal web applications.
-            My responsibilties include the design, development, deployment, testing, and maintenance of these applications.
         </div>
     </Section>
 )

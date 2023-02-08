@@ -2,6 +2,7 @@ import '../styles/index.scss';
 import '../styles/section.scss';
 import '../styles/nav.scss';
 import '../styles/hero.scss';
+import '../styles/links.scss';
 import '../styles/work.scss';
 import '../styles/education.scss';
 import '../styles/skills.scss';

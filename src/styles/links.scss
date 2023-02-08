@@ -1,0 +1,49 @@
+@use 'colors';
+@use 'fonts';
+
+.links-root {
+    @media (min-width: 934px) {
+        max-width: 1200px;
+        .link {
+            height: 90px;
+            width: 90px;
+            border-radius: 15px;
+        }
+    }
+
+    @media (max-width: 933px) {
+        max-width: 650px;
+        .link {
+            height: 70px;
+            width: 70px;
+            border-radius: 12px;
+        }
+    }
+
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .link {
+        background-color: colors.$section-bg-color;
+        box-shadow: 0 0 5px white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: 0.25s;
+
+        .icon {
+            transition: 0.25s;
+        }
+
+        &:hover {
+            box-shadow: 0 0 12px white;
+
+            .icon {
+                filter: drop-shadow(0 0px 3px #FFFFFF);
+            }
+        }
+    }
+}
