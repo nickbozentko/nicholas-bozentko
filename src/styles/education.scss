@@ -2,6 +2,8 @@
 @use 'colors';
 
 .education-root {
+    border-bottom: 4px solid colors.$iona-maroon;
+
     .school {
         font-size: 24px;
         margin-top: 0px;
@@ -19,7 +21,6 @@
         margin-bottom: 3px;
         .key {
             @extend .font-family-mono;
-            font-weight: bold;
         }
 
         .value {

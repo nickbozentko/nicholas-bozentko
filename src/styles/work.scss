@@ -2,6 +2,8 @@
 @use 'colors';
 
 .work-root {
+    border-bottom: 4px solid colors.$ibm-blue;
+
     .company {
         font-size: 24px;
         margin-top: 0;
@@ -21,7 +23,6 @@
             @extend .font-family-mono;
             text-overflow: break-word;
             margin-right: 1rem;
-            font-weight: bold;
         }
 
         .time {
@@ -45,8 +46,8 @@
 
     .description{
         @extend .font-family-secondary;
-        text-indent: 2rem;
         line-height: 1.9rem;
         color: colors.$primary-text-color;
+        margin-bottom: 2rem;
     }
 }

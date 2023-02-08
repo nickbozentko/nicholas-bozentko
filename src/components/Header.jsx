@@ -15,7 +15,7 @@ const Header = () => (
 
         {/* Standard Meta Tags */}
         <meta name="description" content="Hi, I'm Nick. Here's a little bit about me." />
-        <meta name="keywords" content="Nicholas, Bozentko, Developer, Iona, IBM, UPE, Game of Cycles" />
+        <meta name="keywords" content="Nicholas, Bozentko, Developer, Iona, IBM, UPE, Game of Cycles, Cloud, Software, Engineer" />
         <meta name="author" content="Nicholas Bozentko" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

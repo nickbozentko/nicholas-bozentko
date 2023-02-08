@@ -68,6 +68,20 @@ const Projects = () => (
                 skills={["AWS Lambda", "AWS API Gateway", "Python"]}
                 skillsColor="#fae13e"
             />
+
+            <Project 
+                imgSrc="/video.png"
+                name="Video Speed Plugin"
+                description="
+                I watch nearly all video content at 1.5x or 2x speed.
+                Unfortunately, not all websites provide the option to speed up video playback. 
+                This simple Chrome plugin adds that feature to any website with a video player and offers more granular controls.
+                Play any video in the range of 0.1x to 5x speed.
+                "
+                skills={["JavaScript"]}
+                skillsColor="#0066f5"
+                sourceCode="https://github.com/nickbozentko/video-speed-plugin"
+            />
         </div>
     </div>
 );

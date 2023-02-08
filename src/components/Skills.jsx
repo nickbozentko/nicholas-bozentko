@@ -13,7 +13,8 @@ let skills = [
     {
         category: 'Programming Languages',
         items: [
-            'Python', 
+            'Python',
+            'Go', 
             'JavaScript', 
             'TypeScript', 
             'SQL', 
@@ -48,6 +49,7 @@ let skills = [
     {
         category: 'Databases',
         items: [
+            'Postgres',
             'MySQL', 
             'Db2', 
             'MongoDB', 
