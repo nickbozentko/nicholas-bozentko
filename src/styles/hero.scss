@@ -4,10 +4,6 @@
 
 
 .hero-root {
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-
     $nav-height: 75px;
     $hero-box-height-mid: 20vw;
     $hero-box-max-height: 275px;
@@ -30,6 +26,11 @@
         margin: auto;
         margin-top: $hero-box-top-bottom-margin;
         margin-bottom: $hero-box-top-bottom-margin;
+
+        background: colors.$transparent-background;
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border: 2px solid rgba(119, 119, 119, 0.56);
     }
 
     .particle {
@@ -113,6 +114,9 @@
         top: calc((#{$hero-box-height} - #{$logo-size}) / 2);
         width: $logo-size;
         transition: transform .1s ease-out;
+        animation-name: fade-in;
+        animation-duration: 0.75s;
+        animation-timing-function: ease-in-out;
     }
 
     .logo:hover {
@@ -124,11 +128,15 @@
         position: absolute;
         left: min(max(10vw, 25px), 130px);
         top: calc(#{$hero-box-height} / 8);
+        background-clip: text;
+        color: transparent; 
+        background-image: linear-gradient(45deg, #00ccff, #1028ff);
     }
 
     .intro-text-1 {
         @extend .font-family-mono;
         font-size: calc(2 * #{$hero-box-height} / 8);
+        font-weight: 600;
 
         // https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
         // Also, webpack optimization is too "smart"
@@ -143,7 +151,7 @@
 
     .intro-text-2 {
         @extend .font-family-mono;
-        @extend .font-weight-thin;
+        @extend .font-weight-regular;
         font-size: calc(#{$hero-box-height} / 8);
         display: inline-block; // right border "cursor" stays next to text as it's "writing"
         align-self: flex-end;

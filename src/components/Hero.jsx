@@ -50,9 +50,13 @@ const Hero = () => {
             {particles}
             <div className="hero-box">
                 <div className="intro-text-parent">
-                    <div className={`intro-text-1 ${nameCursorState}`}>{nameText}</div>
+                    <div className={`intro-text-1 ${nameCursorState}`}>
+                        {nameText}
+                    </div>
                     <span className="flex-wrapper">
-                        <div className={`intro-text-2 ${introCursorState}`}>{introText}</div>
+                        <div className={`intro-text-2 ${introCursorState}`}>
+                            {introText}
+                        </div>
                     </span>
                 </div>
                 <img src="/logo.svg" className="logo" />
