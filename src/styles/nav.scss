@@ -24,11 +24,16 @@
     }
 
     .nav-links {
-
-        .nav-link {
-            margin: 0 min(1rem, 2vw) 0 min(1rem, 2vw);
+        .nav-link {        
+            margin: 0 1rem;
             display: inline-block;
             transition: .1s linear;
+
+            @media (max-width: 933px) {
+                margin: 0 0.8rem;
+                font-size: 0.8rem;
+            }
+
         }
 
         .nav-link:hover {
