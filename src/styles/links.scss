@@ -2,7 +2,7 @@
 @use 'fonts';
 
 .links-root {
-    @media (min-width: 934px) {
+    @media (min-width: 933px) {
         max-width: 1200px;
         .link {
             height: 90px;
@@ -17,6 +17,16 @@
             height: 70px;
             width: 70px;
             border-radius: 12px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        max-width: 500px;
+        .link {
+            height: 40px;
+            width: 40px;
+            border-radius: 8px;
+            font-size: 0.8rem;
         }
     }
 

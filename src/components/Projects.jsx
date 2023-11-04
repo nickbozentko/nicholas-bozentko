@@ -154,7 +154,7 @@ const Project = ({
 Project.propTypes = {
     imgSrc: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    description: PropTypes.oneOfType([PropTypes.string, PropTypes.elementType]).isRequired,
+    description: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
     skills: PropTypes.arrayOf(PropTypes.string),
     skillsColor: PropTypes.string,
     sourceCode: PropTypes.string,
