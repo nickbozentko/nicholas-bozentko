@@ -13,14 +13,19 @@ const Work = () => (
 
         <div className="description">
             <div>
-            I am a Software Developer at IBM currently working on the CIO Hybrid Cloud Platforms team. 
+            I am a Software Architect at IBM currently working on the Hyperscaler Center of Excellence team. 
             I joined the company in 2018 as an intern after my freshman year of college.
             </div>
         </div>
 
         <div className="role">
+            <div className="role-name">Advisory Software Architect</div>
+            <div className="time">March 2024 - Present</div>
+        </div>
+
+        <div className="role">
             <div className="role-name">Staff Software Developer</div>
-            <div className="time">September 2022 - Present</div>
+            <div className="time">September 2022 - March 2024</div>
         </div>
         
         <div className="role">
