@@ -6,7 +6,7 @@ import { faCodeBranch, faServer } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => (
     <div className="projects-root">
-        <div className="title">Projects</div>
+        <div className="title">Check out my projects</div>
         <div className="projects-holder">
             
             <Project 
@@ -45,7 +45,6 @@ const Projects = () => (
                 skills={["Node.js", "React", "Socket.io"]}
                 skillsColor="#19afff"
                 sourceCode="https://github.com/nickbozentko/tic-tac-toe"
-                demo="https://tictactoe.nicholasbozentko.com/"
             />
 
             <Project 

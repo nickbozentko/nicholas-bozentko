@@ -17,9 +17,6 @@ const Nav = () => (
             <a className="nav-link" href={githubLink} rel="noreferrer" target="_blank">
                 <FontAwesomeIcon icon={faGithubSquare} size="3x" />
             </a>
-            <a className="nav-link" href={twitterLink} rel="noreferrer" target="_blank">
-                <FontAwesomeIcon icon={faSquareXTwitter} size="3x" />
-            </a>
         </div>
     </nav>
 )
