@@ -26,27 +26,27 @@ const PersonalDetails = () => {
 
     return(
         <div className="personal-details-root">
-            <div className="container">
-                <div className="box left">Software Developer</div>
-                <div className="box center">&nbsp;@&nbsp;</div>
-                <div className="box right"><span className="ibm">IBM</span></div>
-            </div>
+            <div className="outer-container">
+                <div className="container">
+                    <div className="box left">Software Developer</div>
+                    <div className="box center">&nbsp;@&nbsp;</div>
+                    <div className="box right"><span className="ibm">IBM</span></div>
+                </div>
 
-            <div className="container">
-                <div className="box left">B.S. in Computer Science</div>
-                <div className="box center">&nbsp;@&nbsp;</div>
-                <div className="box right"><span className="iona">Iona University</span></div>
-            </div>
+                <div className="container">
+                    <div className="box left">B.S. in Computer Science</div>
+                    <div className="box center">&nbsp;@&nbsp;</div>
+                    <div className="box right"><span className="iona">Iona University</span></div>
+                </div>
 
-            <div className="container">
-                <div className="box left">Skilled in</div>
-                <div className="box center">&nbsp;...&nbsp;</div>
-                <div className="box right"><span className={`word ${fade ? 'fade' : ''}`}>{skills[currentIndex]}</span></div>
+                <div className="container">
+                    <div className="box left">Skilled in</div>
+                    <div className="box center">&nbsp;...&nbsp;</div>
+                    <div className="box right"><span className={`word ${fade ? 'fade' : ''}`}>{skills[currentIndex]}</span></div>
+                </div>
             </div>
 
             <div className="standalone">I am currently enjoying writing Go and learning how to pull the perfect shot of espresso ☕</div>
-
-            <hr style={{ width: "20%", border: "1px solid gray" }}/>
         </div>
     );
 }
