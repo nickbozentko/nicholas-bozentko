@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
-    const nameStr = "Hi, I'm Nick";
-    const introStr = "Here's a little bit about me";
+    const nameStr = "Hi, I'm Nick.";
+    const introStr = "Welcome to my profile.";
     const cursorStates = {
         hide: 'hide-cursor',
         solid: 'solid-cursor',

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
  const SkillItem = ({
     children,
@@ -19,11 +18,6 @@ import PropTypes from 'prop-types';
             {children}
         </div>
     );
-}
-
-SkillItem.propTypes = {
-    children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-    color: PropTypes.string
 }
 
 export default SkillItem;

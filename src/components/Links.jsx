@@ -1,29 +1,19 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import useWindowSize from '../hooks/useWindowSize';
+import Linkedin from './icons/Linkedin';
+import GitHub from './icons/GitHub';
 
 const linkedinLink = "https://linkedin.com/in/nicholas-bozentko";
 const githubLink = "https://github.com/nickbozentko";
-const twitterLink = "https://twitter.com/nickbozdev";
-const blogLink = "https://blog.nickboz.dev";
 
 const Links = () => {
-    const { width } = useWindowSize();
-    const iconSize = width > 933 ? '3x' : '2x';
-
     return(
         <div className="links-root">
             <a className="link" href={linkedinLink} rel="noreferrer" target="_blank">
-                <div className="icon" href="" rel="noreferrer" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedinIn} size={iconSize} />
-                </div>
+                <Linkedin width={30} height={30} style={{ fill: 'white' }} className="icon" />
             </a>
             <a className="link" href={githubLink} rel="noreferrer" target="_blank">
-                <div className="icon" href="" rel="noreferrer" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} size={iconSize} />
-                </div>
+                <GitHub width={30} height={30} style={{ fill: 'white' }} className="icon" />
             </a>
         </div>
     );

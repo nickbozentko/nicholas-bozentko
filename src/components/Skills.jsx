@@ -1,13 +1,5 @@
 import React from 'react';
 import SkillItem from './SkillItem.jsx';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-    faCode,
-    faGlobe,
-    faCloud,
-    faDatabase,
-    faCommentDots
-} from '@fortawesome/free-solid-svg-icons';
 
 let skills = [
     {
@@ -22,7 +14,7 @@ let skills = [
             'Java'
         ],
         color: '#ed0c26',
-        icon: faCode
+        icon: null
     },
     {
         category: 'Web',
@@ -33,7 +25,7 @@ let skills = [
             'CSS/SCSS'
         ],
         color: '#1fff4c',
-        icon: faGlobe
+        icon: null
     },
     {
         category: 'Cloud',
@@ -44,7 +36,7 @@ let skills = [
             'Docker'
         ],
         color: '#1fbcff',
-        icon: faCloud
+        icon: null
     },
     {
         category: 'Databases',
@@ -56,7 +48,7 @@ let skills = [
             'Redis'
         ],
         color: '#ffd21f',
-        icon: faDatabase
+        icon: null
     }, 
     {
         category: 'Miscellaneous',
@@ -67,7 +59,7 @@ let skills = [
             'LaTeX'
         ],
         color: '#e91fff',
-        icon: faCommentDots
+        icon: null
     }
 ];
 

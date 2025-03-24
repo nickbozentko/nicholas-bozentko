@@ -11,7 +11,7 @@
     $hero-box-width-mid: 60vw;
     $hero-box-max-width: 800px;
     $hero-box-min-width: 275px;
-    $hero-box-border-radius: 20px;
+    $hero-box-border-radius: 10px;
     $hero-box-top-bottom-margin: 75px;
     $hero-box-height: #{min(#{$hero-box-max-height}, max(#{$hero-box-height-mid}, #{$hero-box-min-height}))};
     $hero-box-width: #{min(#{$hero-box-max-width}, max(#{$hero-box-width-mid}, #{$hero-box-min-width}))};

@@ -1,12 +1,11 @@
 import React from 'react';
 import Section from './Section.jsx';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 const Education = () => (
     <Section 
         title="Education" 
         className="education-root" 
-        icon={faGraduationCap} 
+        icon={null} 
         iconColor="#800c25"
     >
         <h1 className="school">

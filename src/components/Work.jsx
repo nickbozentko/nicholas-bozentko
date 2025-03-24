@@ -1,12 +1,11 @@
 import React from 'react';
 import Section from './Section.jsx';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const Work = () => (
     <Section 
         title="Work Experience" 
         className="work-root" 
-        icon={faLaptopCode} 
+        icon={null} 
         iconColor="#0f62fe"
     >
         <h1 className="company ibm">IBM</h1>

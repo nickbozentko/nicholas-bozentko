@@ -1,7 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSmile } from '@fortawesome/free-regular-svg-icons';
 
 const Section = ({ 
     title, 
@@ -23,13 +20,5 @@ const Section = ({
         </div>
     </div>
 );
-
-Section.propTypes = {
-    title: PropTypes.string.isRequired,
-    children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)]),
-    icon: PropTypes.object,
-    iconColor: PropTypes.string,
-    className: PropTypes.string
-};
 
 export default Section;
